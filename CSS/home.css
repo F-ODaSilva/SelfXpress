@@ -1,15 +1,43 @@
 /* Fontfaces for typography */
 /* Poppins */
 @font-face{
-    font-family: "Poppins-Regular";
+    font-family: "Poppins";
     src: url(../Assets/Fonts/Poppins/Poppins-Regular.ttf)format(truetype);
+    font-weight: normal; 
+    font-style: normal; 
+}
+/* Emblema */
+@font-face{
+    font-family: "Emblema";
+    src: url(../Assets/Fonts/Emblema_One/EmblemaOne-Regular.ttf)format(truetype);
+    font-weight: normal; 
+    font-style: normal; 
+}
+/* DroidSans */
+@font-face{
+    font-family: "DroidSans";
+    src: url(../Assets/Fonts/DroidSansMono.ttf)format(truetype);
+    font-weight: normal; 
+    font-style: normal; 
+}
+/* Soria */
+@font-face{
+    font-family: "Soria";
+    src: url(../Assets/Fonts/soria-font.ttf)format(truetype);
     font-weight: normal; 
     font-style: normal; 
 }
 /* QuickSand */
 @font-face{
-    font-family: "QuickSand-Regular";
+    font-family: "QuickSand";
     src: url(../Assets/Fonts/Quicksand/Quicksand-VariableFont_wght.ttf)format(truetype);
+    font-weight: normal; 
+    font-style: normal; 
+}
+/* Lilita One */
+@font-face{
+    font-family: "Lilita";
+    src: url(../Assets/Fonts/Lilita_One/LilitaOne-Regular.ttf)format(truetype);
     font-weight: normal; 
     font-style: normal; 
 }
@@ -17,6 +45,20 @@
 @font-face{
     font-family: "Vercetti";
     src: url(../Assets/Fonts/Vercetti\ Regular/Vercetti-Regular.ttf)format(truetype);
+    font-weight: normal; 
+    font-style: normal; 
+}
+/* Lora */
+@font-face{
+    font-family: "Lora";
+    src: url(../Assets/Fonts/Lora/Lora-VariableFont_wght.ttf)format(truetype);
+    font-weight: normal; 
+    font-style: normal; 
+}
+/* Lora Italic */
+@font-face{
+    font-family: "Lora Italic";
+    src: url(../Assets/Fonts/Lora/Lora-Italic-VariableFont_wght.ttf)format(truetype);
     font-weight: normal; 
     font-style: normal; 
 }
@@ -54,6 +96,8 @@ header{
         .navbar-brand{
             color: white;
             font-weight: bolder;
+            font-family: "Emblema";
+            font-size: 25px;
         }
         .collapse{
             ul.navbar-nav{
@@ -61,7 +105,7 @@ header{
                     padding: 0 1rem;
                     a.nav-link{
                         color: white;
-                        font-family: "QuickSand-Regular";
+                        font-family: "QuickSand";
                         
                     }
                     /* DropDown Menu */
@@ -75,13 +119,146 @@ header{
         }
        .btn.btn-primary{
             padding: 10px 35px;
-            background: linear-gradient(to right, #1e90ff, #00c853);
+            background: linear-gradient(to right, #00c853, #1e90ff);
             border: none;
             color: white;
-            letter-spacing: 1.5px;
-            font-size: 15px;
+            letter-spacing: 2.5px;
+            font-size: 14px;
             font-family: "Poppins";
-
+            transition: 0,5s ease ease-in-out ;
        } 
+       .btn.btn-primary:hover{
+            background: linear-gradient(to right, #1e90ff, #00c853);
+            transform: scale(1.02);
+       }
     }
 }
+
+
+/* Hero Sectio (Carousel) */
+#heroCarousel{
+    .carousel-inner{
+        .carousel-item{
+            height: 100vh;
+            /* Carousel Image */
+            .purple-blur{
+                background-color: rgb(255, 1, 255);
+                width: 400px;
+                height: 300px;
+                position: absolute;
+                right: 0px;
+                filter: 
+                blur(200px)
+                opacity(0.1)
+                ;
+                border-radius: 45px;
+                z-index: 2;
+
+            }
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+            }
+            .carousel-caption{
+                position: absolute;
+                top: 50%;
+                left: 34%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                text-align: left;
+                /* Content */
+                h1.title{
+                    font-size: 70px;
+                    font-family: "Poppins", "sans-serif";
+                    text-transform: capitalize;
+                }
+                h1.display-2{
+                    position: absolute;
+                    color: #0a9835d8!important;
+                    bottom: 5.2rem;
+                    left: 7px;
+                    z-index: 4;
+                }
+                h1.display-3{
+                    position: absolute;
+                    color: #0099c8d8!important;
+                    bottom: 4.9rem;
+                    left: 5px;
+                }
+                
+                .box-1{
+                    background-color:rgba(12, 134, 186, 0.265); 
+                    position: absolute;
+                    bottom: 16.5rem;
+                    left: 5px;
+                    height: 60px;
+                    width: 380px;
+                }
+                .box-2{
+                    background-color:rgba(0, 153, 255, 0.265); 
+                    position: absolute;
+                    bottom: 11rem;
+                    left: 5px;
+                    height: 60px;
+                    width: 225px;
+                }
+                .box-3{
+                    background-color:rgba(3, 171, 243, 0.265); 
+                    position: absolute;
+                    bottom: 5.5rem;
+                    left: 5px;
+                    height: 70px;
+                    width: 350px;
+                }
+                h4.subtitle{
+                    font-family: "Emblema";
+                    font-size: 18px!important;
+                    background: linear-gradient(to right, #08e464, #1e90ff, #1e90ff, #fff700);
+                    background-size: 200%;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-bottom: 0;
+                }
+                p.description{
+                    font-family: "QuickSand";
+                    text-align: justify;
+                    margin-right: 8rem;
+                    font-size: 18px;
+                }
+                .social-media{
+                    position: absolute;
+                    .w-100.h-100{
+                        position: relative;
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+
+            }
+            .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(25deg,
+                #ffff00da 18%,
+                #00b400e6 35%,
+                #7b00ffe1 100%
+                );
+                filter: opacity(0.3);
+                z-index: 1;
+            }
+        }
+    }
+
+    /* Carousel Control Buttons */
+    .carousel-control-prev-icon,.carousel-control-next-icon{
+        margin-bottom: 30px;
+    }
+}
+
+
