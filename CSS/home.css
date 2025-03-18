@@ -190,7 +190,9 @@ header{
                 }
                 
                 .box-1{
-                    background-color:rgba(12, 134, 186, 0.23); 
+                    box-shadow: 0 0 40px rgb(2, 112, 255);
+                    filter: blur(1);
+                    background-color:rgba(2, 112, 255, 0.589);
                     position: absolute;
                     bottom: 16.5rem;
                     left: 5px;
@@ -198,7 +200,9 @@ header{
                     width: 380px;
                 }
                 .box-2{
-                    background-color:rgba(0, 153, 255, 0.204); 
+                    box-shadow: 0 0 40px rgb(2, 112, 255);
+                    filter: blur(1);
+                    background-color:rgba(2, 112, 255, 0.589);
                     position: absolute;
                     bottom: 11rem;
                     left: 5px;
@@ -206,7 +210,9 @@ header{
                     width: 225px;
                 }
                 .box-3{
-                    background-color:rgba(3, 171, 243, 0.199); 
+                    box-shadow: 0 0 40px rgb(2, 112, 255);
+                    filter: blur(1);
+                    background-color:rgba(2, 112, 255, 0.589);
                     position: absolute;
                     bottom: 6rem;
                     left: 5px;
@@ -230,21 +236,52 @@ header{
                     font-size: 16px;
                     word-spacing: 2px;
                 }
-                .social-media{
-                    position: absolute;
-                    .w-100.h-100{
-                        position: relative;
-                        height: 200px;
-                        width: 200px;
+                .row{
+                    display: flex;
+                    position: relative;
+                    z-index: 3;
+
+                    .col-2{
+                        margin: 0 10px;
+                    }
+
+                    #shop-button{
+                        /* padding: 10px 15px; */
+                        background: linear-gradient(to right, #06eb65, #1e90ff);
+                        z-index: 3;
+                        border: none;
+                        color: white;
+                        letter-spacing: 2.5px;
+                        font-size: 14px;
+                        font-family: "Poppins";
+                        transition: 0,3s ease ease-in-out ;
+                    }
+                    #shop-button:hover{
+                        box-shadow: 0 0 15px rgb(0, 247, 255);
+                    }
+                    #learn-button{
+                        /* padding: 10px 15px; */
+                        background-color: rgba(87, 86, 86, 0.432);
+                        z-index: 3;
+                        border: none;
+                        color: white;
+                        letter-spacing: 2.5px;
+                        font-size: 14px;
+                        font-family: "Poppins";
+                        transition: 0,3s ease ease-in-out ;
+                    }
+                    #learn-button:hover{
+                        box-shadow: 0 0 15px rgb(225, 232, 233);
+                        background-color: whitesmoke;
+                        color: black;
                     }
                 }
-
             }
             .social-media{
                 background-color: rgba(87, 86, 86, 0.273);
                 position: absolute;
                 z-index: 8;
-                bottom: 150px;
+                bottom: 200px;
                 right: 150px;
                 height: 50px;
                 width: 320px;
@@ -254,7 +291,7 @@ header{
 
             }
             .social-media:hover{
-                box-shadow: 0 0 15px rgba(255, 255, 255, 0.793);
+                box-shadow: 0 0 15px rgba(250, 251, 252, 0.685);;
             }
             .overlay{
                 position: absolute;
