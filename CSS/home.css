@@ -23,14 +23,6 @@
   font-style: normal;
 }
 
-/* Soria */
-@font-face {
-  font-family: "Soria";
-  src: url(../Assets/Fonts/soria-font.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* QuickSand */
 @font-face {
   font-family: "QuickSand";
@@ -621,15 +613,15 @@ header {
         .content {
           margin-top: 7rem;
 
-          h2.title {
+          h1.title {
             font-family: "Poppins";
-            font-size: 40px;
+            /* font-size: 40px; */
             font-weight: bold;
             text-align: start;
             color: white !important;
           }
 
-          h6.subtitle {
+          h5.subtitle {
             font-family: "QuickSand";
             text-align: justify;
             margin-right: 3rem;
@@ -672,10 +664,11 @@ header {
 
               /* Description */
               p.description {
-                font-size: 14px;
+                font-size: 12px;
+                font-family: "DroidSans";
                 text-align: start;
-                margin-right: 25px;
-                line-height: 15px;
+                margin-right: 15px;
+                line-height: 18px;
                 color: rgb(189, 186, 186) !important;
               }
             }
@@ -850,4 +843,110 @@ header {
       color: black;
     }
   }
+}
+
+#benefits{
+  padding: 5rem 0rem 4rem!important;
+  .container{
+    height: 80vh;
+  
+    .row{
+       height: 100%;
+  
+      .col-6{
+        .content{
+          margin-top: 7rem;
+          /* Index */
+          h6.index{
+            font-family: "Emblema";
+            background: linear-gradient(to left, limegreen, aqua);
+            background-size: 35%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;          
+            text-align: start;
+          }
+          /* Title */
+          h1.title{
+            font-family: "Poppins";
+            font-weight: bold;
+            text-align: start;
+          }
+          h5.subtitle{
+            font-family: "QuickSand";
+            text-align: justify;
+            margin-right: 3rem;
+            margin-bottom: 2rem;
+            color: whitesmoke !important;
+          }
+        /* Call To Action Buttons (Shop & Learn) */
+        .row {
+          display: flex;
+          position: relative;
+          z-index: 3;
+          justify-content: start;
+
+          .col-2 {
+            margin: 0 10px;
+          }
+
+          #shop-button {
+            /* padding: 10px 15px; */
+            background: linear-gradient(to right, #06eb65, #1e90ff);
+            z-index: 3;
+            border: none;
+            color: white;
+            letter-spacing: 2.5px;
+            font-size: 14px;
+            font-family: "Poppins";
+            transition: 0, 3s ease ease-in-out;
+          }
+
+          #shop-button:hover {
+            box-shadow: 0 0 15px rgb(0, 247, 255);
+          }
+
+          #learn-button {
+            /* padding: 10px 15px; */
+            background-color: rgba(87, 86, 86, 0.432);
+            z-index: 3;
+            border: none;
+            color: white;
+            letter-spacing: 2.5px;
+            font-size: 14px;
+            font-family: "Poppins";
+            transition: 0, 3s ease ease-in-out;
+          }
+
+          #learn-button:hover {
+            box-shadow: 0 0 15px rgb(225, 232, 233);
+            background-color: whitesmoke;
+            color: black;
+          }
+        }
+        
+        }
+      }
+
+      /* Image Column */
+      .col-6.bg-alert {
+        height: 100%;
+
+        /* Image */
+        img.img-fluid {
+          height: 100%;
+          width: 80%;
+          object-fit: cover;
+          margin-right: 4rem;
+          margin-left: 4rem;
+          border: none;
+          border-radius: 20px !important;
+          box-shadow: 2px 2px 7px #0df099d3;
+          filter: contrast(1.3);
+        }
+      }
+    }
+  }
+  
 }
