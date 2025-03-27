@@ -610,6 +610,8 @@ header {
       height: 100%;
 
       .col-6 {
+        padding: 0;
+
         .content {
           margin-top: 7rem;
 
@@ -631,7 +633,7 @@ header {
 
           /* Target-Point Section */
           .row {
-            margin-right: 20px;
+            margin-right: 15px;
 
             .col-6.bg-light {
               width: 50%;
@@ -652,14 +654,14 @@ header {
 
               h4.target-point.prices {
                 background: linear-gradient(to right, #00c853, #1e90ff);
-                box-shadow: 0px 0px 10px #0df099d3;
-                border-radius: 8px;
+                box-shadow: 0px 0px 5px #0df099d3;
+                border-radius: 5px;
               }
 
               h4.target-point.delivery {
                 background: linear-gradient(to right, #00c853, #1e90ff);
-                box-shadow: 0px 0px 10px #0df099d3;
-                border-radius: 8px;
+                box-shadow: 0px 0px 5px #0df099d3;
+                border-radius: 5px;
               }
 
               /* Description */
@@ -667,7 +669,7 @@ header {
                 font-size: 12px;
                 font-family: "DroidSans";
                 text-align: start;
-                margin-right: 15px;
+                margin-right: 35px;
                 line-height: 18px;
                 color: rgb(189, 186, 186) !important;
               }
@@ -845,6 +847,7 @@ header {
   }
 }
 
+/* Benefits Section */
 #benefits{
   padding: 5rem 0rem 4rem!important;
   .container{
@@ -949,4 +952,157 @@ header {
     }
   }
   
+}
+
+/* Call To Action Bar Section */
+#cta{
+  padding: 4rem;
+/* Container */
+  .container{
+    background-image: url(../Assets/Images/Hero-3.jpg)!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    padding: 5rem 4rem;
+    justify-content: space-between;
+    border-radius: 20px;
+    filter: brightness(0.8) contrast(1.4);
+
+  /* Left Side Text Column  */
+    .col-8{
+      text-align: start;
+      
+      /* Title */
+      h3.title{
+        font-family: "Poppins";
+        font-size: x-large;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #ffffff;
+        letter-spacing: 3px;
+      }
+      /* Description */
+      p.description{
+        font-size: small;
+        font-family: "Emblema";
+        background: linear-gradient(to left, #0087ff, #00dbff,#38ff00 , #e0ff05);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0;          
+        text-align: start;
+      }
+    }
+    /* Right Side Call to Action */
+    .col-4{
+      .row{
+        justify-content: space-evenly;
+
+        .col-4{
+          padding: 5px;
+          text-decoration: none;
+          border-radius: 15px;
+        }
+
+
+        #shop-button {
+          background: linear-gradient(to right, #06eb65, #1e90ff);
+          z-index: 3;
+          border: none;
+          color: white;
+          letter-spacing: 2.5px;
+          font-size: 14px;
+          font-family: "Poppins";
+          transition: 0, 3s ease ease-in-out;
+        }
+
+        #shop-button:hover {
+          box-shadow: 0 0 15px rgb(0, 247, 255);
+        }
+
+        #learn-button {
+          /* padding: 10px 15px; */
+          background-color: rgba(87, 86, 86, 0.432);
+          z-index: 3;
+          border: none;
+          color: white;
+          letter-spacing: 2.5px;
+          font-size: 14px;
+          font-family: "Poppins";
+          transition: 0, 3s ease ease-in-out;
+        }
+
+        #learn-button:hover {
+          box-shadow: 0 0 15px rgb(225, 232, 233);
+          background-color: whitesmoke;
+          color: black;
+        }
+      }
+    }
+  }
+
+}
+
+/* Testimonials Section */
+#testimonials{
+  height: 60vh;
+  margin: 10rem 0rem;
+
+  h6.index{
+    font-family: "Emblema";
+            background: linear-gradient(to left, limegreen, aqua);
+            background-size: 35%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;          
+            text-align: center;    
+  }
+
+  #testCarousel{
+    height: 100%;
+
+    .carousel-inner{
+      height: 100%;
+      background-image: url(../Assets/Images/Spectral_20Dark_20-_2050.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: contrast(1.2)!important;
+      
+
+      .carousel-item{
+        height: 100%;
+        margin-top: -3rem;
+        
+        .carousel-caption{  
+          h3.comment{
+            font-family: "Lora";
+            margin-bottom: 0;
+            padding-bottom: 0;
+            filter: brightness(1)!important;
+          }
+          img.d-block{
+            width: 115px!important;
+            height: 115px;
+            object-fit: cover;
+            margin: 2rem auto 5px;
+            border-radius: 150px;
+          }
+          h6.name{
+            font-family: "Poppins";
+          }
+          p.local{
+            font-size: 10px;
+            font-family: "DroidSans";
+          }
+        }
+      }
+
+    }
+
+  }
 }
