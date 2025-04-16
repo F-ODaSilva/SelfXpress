@@ -1,0 +1,69 @@
+/* Fontfaces for typography */
+
+  /* Poppins */
+  @font-face {
+    font-family: "Poppins";
+    src: url(../Assets/Fonts/Poppins/Poppins-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Emblema */
+  @font-face {
+    font-family: "Emblema";
+    src: url(../Assets/Fonts/Emblema_One/EmblemaOne-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* DroidSans */
+  @font-face {
+    font-family: "DroidSans";
+    src: url(../Assets/Fonts/DroidSansMono.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* QuickSand */
+  @font-face {
+    font-family: "QuickSand";
+    src: url(../Assets/Fonts/Quicksand/Quicksand-VariableFont_wght.ttf)
+      format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Lilita One */
+  @font-face {
+    font-family: "Lilita";
+    src: url(../Assets/Fonts/Lilita_One/LilitaOne-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Vercetti */
+  @font-face {
+    font-family: "Vercetti";
+    src: url(../Assets/Fonts/Vercetti\ Regular/Vercetti-Regular.ttf)
+      format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Lora */
+  @font-face {
+    font-family: "Lora";
+    src: url(../Assets/Fonts/Lora/Lora-VariableFont_wght.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Lora Italic */
+  @font-face {
+    font-family: "Lora Italic";
+    src: url(../Assets/Fonts/Lora/Lora-Italic-VariableFont_wght.ttf)
+      format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
