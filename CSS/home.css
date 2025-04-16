@@ -1,71 +1,3 @@
-/* Fontfaces for typography */
-/* Poppins */
-@font-face {
-  font-family: "Poppins";
-  src: url(../Assets/Fonts/Poppins/Poppins-Regular.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Emblema */
-@font-face {
-  font-family: "Emblema";
-  src: url(../Assets/Fonts/Emblema_One/EmblemaOne-Regular.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* DroidSans */
-@font-face {
-  font-family: "DroidSans";
-  src: url(../Assets/Fonts/DroidSansMono.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* QuickSand */
-@font-face {
-  font-family: "QuickSand";
-  src: url(../Assets/Fonts/Quicksand/Quicksand-VariableFont_wght.ttf)
-    format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Lilita One */
-@font-face {
-  font-family: "Lilita";
-  src: url(../Assets/Fonts/Lilita_One/LilitaOne-Regular.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Vercetti */
-@font-face {
-  font-family: "Vercetti";
-  src: url(../Assets/Fonts/Vercetti\ Regular/Vercetti-Regular.ttf)
-    format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Lora */
-@font-face {
-  font-family: "Lora";
-  src: url(../Assets/Fonts/Lora/Lora-VariableFont_wght.ttf) format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Lora Italic */
-@font-face {
-  font-family: "Lora Italic";
-  src: url(../Assets/Fonts/Lora/Lora-Italic-VariableFont_wght.ttf)
-    format(truetype);
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   margin: 0;
   height: 100%;
@@ -1104,5 +1036,70 @@ header {
 
     }
 
+  }
+}
+
+/* Contact Us Section */
+#contact{
+  margin: 6rem auto;
+  .heading{
+    text-align: center;
+    .index{
+      font-family: "Emblema";
+      background: linear-gradient(to left, limegreen, aqua);
+      background-size: 80%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0!important;           
+    }
+    /* Title */
+    h1.title{
+      font-family: "Poppins";
+      font-size: 50px;
+      color: whitesmoke;
+      margin-bottom: 0;
+    }
+    /* Description */
+    p.description{
+      font-family: "QuickSand";
+      color: #ababab;
+    }
+  }
+
+  /* Container */
+  .container{
+    width: 700px;
+    color: white;
+    .form-label{
+      font-family: "QuickSand";
+    }
+    .form-control{
+      border-radius: 10px;
+      font-family: "QuickSand";
+      font-size: small;
+    }
+
+    /* Input Field Focus */
+    .form-control:focus{
+      box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+    }
+
+    button#submit{
+      display: flex;
+      margin: 2rem auto;
+      background: linear-gradient(to right, #06eb65, #1e90ff);
+      z-index: 3;
+      border: none;
+      color: white;
+      letter-spacing: 2.5px;
+      font-size: 14px;
+      font-family: "Poppins";
+      transition: 0, 3s ease ease-in-out;
+    }
+
+    submit:hover{
+      box-shadow: 0 0 15px rgb(0, 247, 255);
+    }
   }
 }

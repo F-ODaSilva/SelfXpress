@@ -29,10 +29,7 @@
     <link rel="manifest" href="../Images/logo/site.webmanifest" />
 
     <!-- Font Awesome Kit Code Link -->
-    <script
-      src="https://kit.fontawesome.com/f7ccd0c567.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/f7ccd0c567.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts CDN Link -->
 
@@ -50,8 +47,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
 
-    <!-- CSS StyleSheet -->
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="../CSS/home.css" />
+    <!-- Font-Faces CSS StyleSheet -->
+    <link rel="stylesheet" href="../CSS/fonts.css">
+  
     <title>SelfXpress</title>
   </head>
 
@@ -85,8 +85,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Início</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="../Html/about.html">Sobre</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -99,9 +99,9 @@
                   Produtos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Tech</a></li>
-                  <li><a class="dropdown-item" href="#">Home</a></li>
-                  <li><a class="dropdown-item" href="#">Kids</a></li>
+                  <li><a class="dropdown-item" href="../Html/tech.html">Tech</a></li>
+                  <li><a class="dropdown-item" href="../Html/home.html">Home</a></li>
+                  <li><a class="dropdown-item" href="../Html/kids.html">Kids</a></li>
                 </ul>
               </li>
             </ul>
@@ -142,7 +142,7 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active" data-bs-interval="100000">
             <div class="purple-blur"></div>
             <img
               src="../Assets/Images/Hero-1.jpg"
@@ -184,17 +184,17 @@
               class="social-media d-flex justify-content-center z-3 text-white"
             >
               <!-- Facebook link -->
-              <!-- <a href="https://facebook.com/mozprogym" class="btn btn-outline-light btn-floating m-1">
+              <a href="https://facebook.com/mozprogym" class="btn btn-outline-light btn-floating m-1">
                         <i class="fa-brands fa-facebook" style="color: #0742f2"></i>
-                    </a> -->
+                    </a>
 
               <!-- Whats App Link -->
-              <!-- <a href="https://wa.me/+258844414441" class="btn btn-outline-light btn-floating m-1">
+              <a href="https://wa.me/+258844414441" class="btn btn-outline-light btn-floating m-1">
                         <i class="fa-brands fa-whatsapp" style="color: limegreen"></i>
-                    </a> -->
+                    </a>
 
               <!-- Instagram link -->
-              <!-- <a href="https://www.instagram.com/mozprogym/"
+              <a href="https://www.instagram.com/mozprogym/"
                         class="btn btn-outline-light btn-floating m-1">
                         <i class="fa-brands fa-instagram" style="
                             background: linear-gradient(
@@ -204,22 +204,22 @@
                             #6228d7
                           );
                         "></i>
-                    </a> -->
+                    </a>
 
               <!-- Youtube Link -->
-              <!-- <a href="https://www.youtube.com/@MozProGym" class="btn btn-outline-light btn-floating m-1">
+              <a href="https://www.youtube.com/@MozProGym" class="btn btn-outline-light btn-floating m-1">
                         <i class="fa-brands fa-youtube" style="color: red"></i>
-                    </a> -->
+                    </a>
 
               <!-- Gmail Link -->
-              <!-- <a href="mailto:info@progym.com" class="btn btn-outline-light btn-floating m-1"> 
+              <a href="mailto:info@progym.com" class="btn btn-outline-light btn-floating m-1"> 
                         <img src="../Images/logo/gmailIcon-removebg-preview.png" alt="" />
-                    </a> -->
+                    </a>
 
               <!-- Tik Tok Link -->
-              <!-- <a href="https://www.tiktok.com/@mozprogym" class="btn btn-outline-light btn-floating m-1">
+              <a href="https://www.tiktok.com/@mozprogym" class="btn btn-outline-light btn-floating m-1">
                         <i class="fa-brands fa-tiktok"></i>
-                    </a> -->
+                    </a>
             </div>
             <div class="overlay"></div>
           </div>
@@ -594,7 +594,62 @@
         </div>
         
       </section>
-      
+
+      <!-- Product Carousel Section -->
+
+
+
+      <!-- Contact Us Section -->
+      <section id="contact">
+        <div class="heading">
+          <div class="index mb-3">Contact</div>
+          <h1 class="title">
+            Get In Touch
+          </h1>
+          <p class="description">
+            We'd love to hear from you!
+          </p>
+        </div>
+        <div class="container">
+          <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+              type="text"
+              name=""
+              id="userName"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              name=""
+              id="userEmail"
+              placeholder=""
+            />
+          </div>
+          <div class="mb-1">
+            <label for="" class="form-label">Message</label>
+            <textarea 
+              class="form-control" 
+              name="" 
+              id="" 
+              rows="3" 
+              placeholder="Type your message">  
+            </textarea>
+          </div>    
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="submit"
+          >
+            Submit
+          </button>  
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
