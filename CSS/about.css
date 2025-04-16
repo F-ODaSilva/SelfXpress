@@ -1,0 +1,384 @@
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+header {
+  .bg-gradient {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blueviolet
+      /* linear-gradient(9deg, rgba(172, 217, 38, 1) 4%, rgba(172, 217,38,1) 40%, rgba(172,217,38,1) 98%) */;
+    filter: opacity(0.25);
+    z-index: 50;
+  }
+}
+
+/* Navbar Section */
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+
+  .container-fluid {
+    margin: 0 2.5rem;
+
+    .navbar-brand {
+      color: white;
+      font-weight: bolder;
+      font-family: "Emblema";
+      font-size: 25px;
+    }
+
+    .collapse {
+      ul.navbar-nav {
+        li.nav-item {
+          padding: 0 1rem;
+
+          a.nav-link {
+            color: white;
+            font-family: "QuickSand";
+          }
+
+          /* DropDown Menu */
+          .dropdown-menu {
+            margin: 0 15px;
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+
+    .btn.btn-primary {
+      padding: 10px 35px;
+      background: linear-gradient(to right, #00c853, #1e90ff);
+      border: none;
+      color: white;
+      letter-spacing: 2.5px;
+      font-size: 14px;
+      font-family: "Poppins";
+      transition: 0, 5s ease ease-in-out;
+    }
+
+    .btn.btn-primary:hover {
+      background: linear-gradient(to right, #1e90ff, #00c853);
+      box-shadow: 0 0 40px rgb(2, 112, 255);
+      transform: scale(1.02);
+    }
+  }
+}
+
+/* Hero Section */
+#hero {
+  .container {
+    padding: 10rem 2rem 4rem;
+
+    h1.title {
+      letter-spacing: 10px;
+      font-size: 80px;
+      box-shadow: 0px 8px 135px #286b62 !important;
+      border-radius: 12px;
+      background-color: #6e6d6d30;
+      border: #4d4e4d78 0.5px solid;
+    }
+
+    h5.sub-title {
+      font-family: "QuickSand";
+      letter-spacing: 5px;
+      font-size: 12px;
+      word-spacing: -2px;
+    }
+  }
+}
+
+/* Main Content Section */
+/* About Section */
+#about {
+  .container {
+    padding: 4rem 8rem;
+    h1.title {
+      font-family: "Emblema";
+      color: rgb(255, 255, 255);
+    }
+    p.text-justify {
+      color: lightgray;
+      margin: 1rem 6rem;
+      text-align: justify;
+    }
+  }
+}
+
+/* Process Section */
+#process {
+  padding: 7rem 0;
+  .container {
+    .row {
+      /* Left Column */
+      .col-6 {
+        .heading {
+          h6.index {
+            font-family: "Emblema";
+            background: linear-gradient(to left, limegreen, aqua);
+            background-size: 25%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;
+          }
+          h1.title {
+            font-family: "Poppins";
+            color: whitesmoke;
+          }
+          .row {
+            display: flex;
+            position: relative;
+            justify-content: start;
+
+            .col-2 {
+              margin: 0px 10px;
+              padding: 10px 30px !important;
+              width: 30% !important;
+              text-align: center;
+              align-content: center;
+              font-size: small !important;
+            }
+
+            #shop-button {
+              background: linear-gradient(to right, #06eb65, #1e90ff);
+              border: none;
+              color: white;
+              letter-spacing: 2.5px;
+              font-family: "Poppins";
+              transition: 0, 3s ease ease-in-out;
+            }
+
+            #shop-button:hover {
+              box-shadow: 0 0 15px rgb(0, 247, 255);
+            }
+
+            #learn-button {
+              background-color: rgba(87, 86, 86, 0.432);
+              border: none;
+              color: white;
+              letter-spacing: 2.5px;
+              font-family: "Poppins";
+              transition: 0, 3s ease ease-in-out;
+            }
+
+            #learn-button:hover {
+              box-shadow: 0 0 15px rgb(225, 232, 233);
+              background-color: whitesmoke;
+              color: black;
+            }
+          }
+        }
+      }
+      /* Right Column */
+      .col-6 {
+        .d-flex.col {
+          .icon-group {
+            i.me-3.fa-solid {
+              font-size: 20px;
+              font-style: normal;
+            }
+            span.line {
+              background:linear-gradient( 
+                100deg,
+                #09e7e7 32%,
+                #08ea6ee6 50% 
+              );
+              width: 5px !important;
+              display: block;
+              height: 100%;
+              margin: 5px 10px;
+              border-radius: 20px;
+            }
+          }
+          .content{
+            h5.title.mb-2{
+              color: whitesmoke;
+              font-family: "Emblema";
+              font-weight: 200;
+            }
+            p.description{
+              color: lightgrey;
+              text-align: start;
+              font-size: normal;
+              font-family: "QuickSand"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Benefits Section */
+#values{
+  padding: 6rem 0rem 4rem!important;
+  .container{
+    height: 80vh;
+  
+    .row{
+       height: 100%;
+  
+      .col-6{
+        .content{
+          margin-top: 7rem;
+          /* Index */
+          h6.index{
+            font-family: "Emblema";
+            background: linear-gradient(to left, limegreen, aqua);
+            background-size: 35%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;          
+            text-align: start;
+          }
+          /* Title */
+          h1.title{
+            font-family: "Poppins";
+            font-weight: bold;
+            text-align: start;
+          }
+          h5.subtitle{
+            font-family: "QuickSand";
+            font-size: 16px;
+            text-align: justify;
+            margin-right: 3rem;
+            margin-bottom: 2rem;
+            color: whitesmoke !important;
+          }
+        /* Call To Action Buttons (Shop & Learn) */
+        .row {
+          display: flex;
+          position: relative;
+          z-index: 3;
+          justify-content: start;
+
+          .col-2 {
+            margin: 0 10px;
+          }
+
+          #shop-button {
+            /* padding: 10px 15px; */
+            background: linear-gradient(to right, #06eb65, #1e90ff);
+            z-index: 3;
+            border: none;
+            color: white;
+            letter-spacing: 2.5px;
+            font-size: 14px;
+            font-family: "Poppins";
+            transition: 0, 3s ease ease-in-out;
+          }
+
+          #shop-button:hover {
+            box-shadow: 0 0 15px rgb(0, 247, 255);
+          }
+
+          #learn-button {
+            /* padding: 10px 15px; */
+            background-color: rgba(87, 86, 86, 0.432);
+            z-index: 3;
+            border: none;
+            color: white;
+            letter-spacing: 2.5px;
+            font-size: 14px;
+            font-family: "Poppins";
+            transition: 0, 3s ease ease-in-out;
+          }
+
+          #learn-button:hover {
+            box-shadow: 0 0 15px rgb(225, 232, 233);
+            background-color: whitesmoke;
+            color: black;
+          }
+        }
+        
+        }
+      }
+
+      /* Image Column */
+      .col-6.bg-alert {
+        height: 100%;
+
+        /* Image */
+        img.img-fluid {
+          height: 100%;
+          width: 80%;
+          object-fit: cover;
+          margin-right: 4rem;
+          margin-left: 4rem;
+          border: none;
+          border-radius: 20px !important;
+          box-shadow: 2px 2px 7px #0df099d3;
+          filter: contrast(1.1);
+        }
+      }
+    }
+  }  
+}
+
+/* Responsiveness Section */
+@media (max-width: 768px) {
+  /* Hero Section */
+  #hero {
+    .container {
+      h1.title {
+        font-size: 30px;
+        letter-spacing: 7px;
+        padding: 15px;
+        box-shadow: 0px -30px 135px #9f9f9f !important;
+        border-radius: 12px;
+        background-color: #6e6d6d47;
+        border: #4e4ed478 0.5px solid;
+        border-top-color: #6e6e6ea1;
+      }
+    }
+  }
+
+  /* About Section */
+  #about {
+    .container {
+      padding: 1rem 3rem;
+
+      h1.title {
+        font-size: 38px;
+      }
+      p.text-justify {
+        margin: 1rem 0;
+        font-size: 18px;
+      }
+    }
+  }
+
+  #process{
+    .container{
+      .row{
+        display: block;
+        .col-6{
+          width: 100%;
+        }
+        .col-6:last-child{
+          margin-top: 4rem!important;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
