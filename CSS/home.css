@@ -12,14 +12,14 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: blueviolet
-      /* linear-gradient(9deg, rgba(172, 217, 38, 1) 4%, rgba(172, 217,38,1) 40%, rgba(172,217,38,1) 98%) */;
+    background-color: blueviolet;
+      /* linear-gradient(9deg, rgba(172, 217, 38, 1) 4%, rgba(172, 217,38,1) 40%, rgba(172,217,38,1) 98%); */
     filter: opacity(0.25);
     z-index: 50;
   }
 }
 
-/* Navbae Section */
+/* Navbar Section */
 .navbar {
   position: absolute;
   width: 100%;
@@ -687,8 +687,7 @@ header {
     /* Card */
     .card {
       background-color: whitesmoke;
-      border: none!important;
-    
+      border: none !important;
 
       /* Image */
       img.card-img-top {
@@ -715,16 +714,16 @@ header {
     }
 
     /* Card Border Radius Override */
-    .card:nth-child(1){
+    .card:nth-child(1) {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
     }
-    .card:nth-child(2){
+    .card:nth-child(2) {
       border-radius: 0;
     }
-    .card:nth-child(3){
+    .card:nth-child(3) {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: 20px;
@@ -780,87 +779,86 @@ header {
 }
 
 /* Benefits Section */
-#benefits{
-  padding: 5rem 0rem 4rem!important;
-  .container{
+#benefits {
+  padding: 5rem 0rem 4rem !important;
+  .container {
     height: 80vh;
-  
-    .row{
-       height: 100%;
-  
-      .col-6{
-        .content{
+
+    .row {
+      height: 100%;
+
+      .col-6 {
+        .content {
           margin-top: 7rem;
           /* Index */
-          h6.index{
+          h6.index {
             font-family: "Emblema";
             background: linear-gradient(to left, limegreen, aqua);
             background-size: 35%;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 0;          
+            margin-bottom: 0;
             text-align: start;
           }
           /* Title */
-          h1.title{
+          h1.title {
             font-family: "Poppins";
             font-weight: bold;
             text-align: start;
           }
-          h5.subtitle{
+          h5.subtitle {
             font-family: "QuickSand";
             text-align: justify;
             margin-right: 3rem;
             margin-bottom: 2rem;
             color: whitesmoke !important;
           }
-        /* Call To Action Buttons (Shop & Learn) */
-        .row {
-          display: flex;
-          position: relative;
-          z-index: 3;
-          justify-content: start;
-
-          .col-2 {
-            margin: 0 10px;
-          }
-
-          #shop-button {
-            /* padding: 10px 15px; */
-            background: linear-gradient(to right, #06eb65, #1e90ff);
+          /* Call To Action Buttons (Shop & Learn) */
+          .row {
+            display: flex;
+            position: relative;
             z-index: 3;
-            border: none;
-            color: white;
-            letter-spacing: 2.5px;
-            font-size: 14px;
-            font-family: "Poppins";
-            transition: 0, 3s ease ease-in-out;
-          }
+            justify-content: start;
 
-          #shop-button:hover {
-            box-shadow: 0 0 15px rgb(0, 247, 255);
-          }
+            .col-2 {
+              margin: 0 10px;
+            }
 
-          #learn-button {
-            /* padding: 10px 15px; */
-            background-color: rgba(87, 86, 86, 0.432);
-            z-index: 3;
-            border: none;
-            color: white;
-            letter-spacing: 2.5px;
-            font-size: 14px;
-            font-family: "Poppins";
-            transition: 0, 3s ease ease-in-out;
-          }
+            #shop-button {
+              /* padding: 10px 15px; */
+              background: linear-gradient(to right, #06eb65, #1e90ff);
+              z-index: 3;
+              border: none;
+              color: white;
+              letter-spacing: 2.5px;
+              font-size: 14px;
+              font-family: "Poppins";
+              transition: 0, 3s ease ease-in-out;
+            }
 
-          #learn-button:hover {
-            box-shadow: 0 0 15px rgb(225, 232, 233);
-            background-color: whitesmoke;
-            color: black;
+            #shop-button:hover {
+              box-shadow: 0 0 15px rgb(0, 247, 255);
+            }
+
+            #learn-button {
+              /* padding: 10px 15px; */
+              background-color: rgba(87, 86, 86, 0.432);
+              z-index: 3;
+              border: none;
+              color: white;
+              letter-spacing: 2.5px;
+              font-size: 14px;
+              font-family: "Poppins";
+              transition: 0, 3s ease ease-in-out;
+            }
+
+            #learn-button:hover {
+              box-shadow: 0 0 15px rgb(225, 232, 233);
+              background-color: whitesmoke;
+              color: black;
+            }
           }
-        }
-        
         }
       }
 
@@ -883,15 +881,14 @@ header {
       }
     }
   }
-  
 }
 
 /* Call To Action Bar Section */
-#cta{
+#cta {
   padding: 4rem;
-/* Container */
-  .container{
-    background-image: url(../Assets/Images/Hero-3.jpg)!important;
+  /* Container */
+  .container {
+    background-image: url(../Assets/Images/Hero-3.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -902,12 +899,12 @@ header {
     border-radius: 20px;
     filter: brightness(0.8) contrast(1.4);
 
-  /* Left Side Text Column  */
-    .col-8{
+    /* Left Side Text Column  */
+    .col-8 {
       text-align: start;
-      
+
       /* Title */
-      h3.title{
+      h3.title {
         font-family: "Poppins";
         font-size: x-large;
         font-weight: bold;
@@ -916,29 +913,34 @@ header {
         letter-spacing: 3px;
       }
       /* Description */
-      p.description{
+      p.description {
         font-size: small;
         font-family: "Emblema";
-        background: linear-gradient(to left, #0087ff, #00dbff,#38ff00 , #e0ff05);
+        background: linear-gradient(
+          to left,
+          #0087ff,
+          #00dbff,
+          #38ff00,
+          #e0ff05
+        );
         background-size: 100%;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 0;          
+        margin-bottom: 0;
         text-align: start;
       }
     }
     /* Right Side Call to Action */
-    .col-4{
-      .row{
+    .col-4 {
+      .row {
         justify-content: space-evenly;
 
-        .col-4{
+        .col-4 {
           padding: 5px;
           text-decoration: none;
           border-radius: 15px;
         }
-
 
         #shop-button {
           background: linear-gradient(to right, #06eb65, #1e90ff);
@@ -975,117 +977,113 @@ header {
       }
     }
   }
-
 }
 
 /* Testimonials Section */
-#testimonials{
+#testimonials {
   height: 60vh;
   margin: 10rem 0rem;
 
-  h6.index{
+  h6.index {
     font-family: "Emblema";
-            background: linear-gradient(to left, limegreen, aqua);
-            background-size: 35%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 0;          
-            text-align: center;    
+    background: linear-gradient(to left, limegreen, aqua);
+    background-size: 35%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+    text-align: center;
   }
 
-  #testCarousel{
+  #testCarousel {
     height: 100%;
 
-    .carousel-inner{
+    .carousel-inner {
       height: 100%;
       background-image: url(../Assets/Images/Spectral_20Dark_20-_2050.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      filter: contrast(1.2)!important;
-      
+      filter: contrast(1.2) !important;
 
-      .carousel-item{
+      .carousel-item {
         height: 100%;
         margin-top: -3rem;
-        
-        .carousel-caption{  
-          h3.comment{
+
+        .carousel-caption {
+          h3.comment {
             font-family: "Lora";
             margin-bottom: 0;
             padding-bottom: 0;
-            filter: brightness(1)!important;
+            filter: brightness(1) !important;
           }
-          img.d-block{
-            width: 115px!important;
+          img.d-block {
+            width: 115px !important;
             height: 115px;
             object-fit: cover;
             margin: 2rem auto 5px;
             border-radius: 150px;
           }
-          h6.name{
+          h6.name {
             font-family: "Poppins";
           }
-          p.local{
+          p.local {
             font-size: 10px;
             font-family: "DroidSans";
           }
         }
       }
-
     }
-
   }
 }
 
 /* Contact Us Section */
-#contact{
+#contact {
   margin: 6rem auto;
-  .heading{
+  .heading {
     text-align: center;
-    .index{
+    .index {
       font-family: "Emblema";
       background: linear-gradient(to left, limegreen, aqua);
       background-size: 80%;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 0!important;           
+      margin-bottom: 0 !important;
     }
     /* Title */
-    h1.title{
+    h1.title {
       font-family: "Poppins";
       font-size: 50px;
       color: whitesmoke;
       margin-bottom: 0;
     }
     /* Description */
-    p.description{
+    p.description {
       font-family: "QuickSand";
       color: #ababab;
     }
   }
 
   /* Container */
-  .container{
+  .container {
     width: 700px;
     color: white;
-    .form-label{
+    .form-label {
       font-family: "QuickSand";
     }
-    .form-control{
+    .form-control {
       border-radius: 10px;
       font-family: "QuickSand";
       font-size: small;
     }
 
     /* Input Field Focus */
-    .form-control:focus{
-      box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+    .form-control:focus {
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
     }
 
-    button#submit{
+    button#submit {
       display: flex;
       margin: 2rem auto;
       background: linear-gradient(to right, #06eb65, #1e90ff);
@@ -1098,7 +1096,7 @@ header {
       transition: 0, 3s ease ease-in-out;
     }
 
-    submit:hover{
+    submit:hover {
       box-shadow: 0 0 15px rgb(0, 247, 255);
     }
   }

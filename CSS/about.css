@@ -223,7 +223,7 @@ header {
 #values{
   padding: 6rem 0rem 4rem!important;
   .container{
-    height: 80vh;
+    height: 70vh;
   
     .row{
        height: 100%;
@@ -322,12 +322,88 @@ header {
           filter: contrast(1.1);
         }
       }
+       
     }
   }  
 }
 
 /* Responsiveness Section */
 @media (max-width: 768px) {
+  #overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: linear-gradient(
+      29deg,
+      #08e46459 10%,
+      #471eff4f 70%,
+      #fff70082
+    );
+    display: none;
+    transition: opacity 0.5s ease;
+  }
+
+  /* Navbar Section */
+  header{
+    nav.navbar{
+      .container-fluid{
+        /* Hamburguer Menu */
+        #hamburger{
+          display: flex;
+          margin: 0 90%!important;
+          background: linear-gradient(to right,#0a8bfbf2, #00785ce1);
+          width: 50px;
+        }
+        #hamburger:focus{
+          box-shadow: none!important;
+        }
+        #hamburger:hover{
+          box-shadow: 0 0 12px #0a8bfef2!important;
+        }
+        
+      
+        .collapse {
+          text-align: center;
+          ul.navbar-nav{
+              li.nav-item{
+                padding: 2rem 0;
+                a.nav-link{
+                  font-size: 15px;
+                }
+                a.nav-link:hover{
+                  font-size: 17px;
+                }
+                a.nav-link:focus{
+                  font-size: 17px;
+                }
+                ul.dropdown-menu{
+                  background-color: transparent;
+                  text-align: center;
+                  border: none;
+                  li{
+                    margin: 2rem 0;
+                    a.dropdown-item{
+                      color: whitesmoke;
+                    }
+                    a.dropdown-item:hover{
+                      background-color: transparent;
+                    }
+                  }
+                }
+              }
+              a.btn.btn-primary:hover{
+                font-size: 14px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+
   /* Hero Section */
   #hero {
     .container {
@@ -359,6 +435,7 @@ header {
     }
   }
 
+  /* Process Section */
   #process{
     .container{
       .row{
@@ -373,12 +450,15 @@ header {
     }
   }
 
-
-
-
-
-
-
-
-
+  /* Values Section */
+  #values{
+    
+  }
 }
+
+
+
+
+
+
+
