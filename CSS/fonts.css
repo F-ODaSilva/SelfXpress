@@ -1,5 +1,45 @@
 /* Fontfaces for typography */
 
+ /* Special Gothic */
+ @font-face {
+  font-family: "Special Gothic";
+    src: url(../Assets/Fonts/Special_Gothic/SpecialGothicExpandedOne-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+ /* PoetsOne */
+ @font-face {
+  font-family: "PoetsOne";
+    src: url(../Assets/Fonts/PoetsOne/PoetsenOne-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+ /* Poller One */
+ @font-face {
+  font-family: "Poller";
+    src: url(../Assets/Fonts/PollerOne/PollerOne-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+ /* Rubik One */
+ @font-face {
+  font-family: "Rubik";
+    src: url(../Assets/Fonts/RubikOne/RubikMonoOne-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+ /* Rightoues */
+ @font-face {
+  font-family: "Right";
+    src: url(../Assets/Fonts/Righteous/Righteous-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
   /* Poppins */
   @font-face {
     font-family: "Poppins";
