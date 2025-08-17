@@ -1,202 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap 5 CDN Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Tab Logo Fav-icon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../Images/logo/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../Images/logo/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../Images/logo/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../Images/logo/site.webmanifest" />
 
-    <!-- Font Awesome Kit Code Link -->
-    <script src="https://kit.fontawesome.com/f7ccd0c567.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap 5 CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Tab Logo Fav-icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../Images/logo/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../Images/logo/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../Images/logo/favicon-16x16.png" />
+  <link rel="manifest" href="../Images/logo/site.webmanifest" />
 
-    <!-- Google Fonts CDN Link -->
+  <!-- Font Awesome Kit Code Link -->
+  <script src="https://kit.fontawesome.com/f7ccd0c567.js" crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300&family=Roboto+Slab&family=Lemon&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Google Fonts CDN Link -->
 
-    <!-- Bootstrap CDN Icon Link -->
-    <!-- Option 1: Include in HTML -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300&family=Roboto+Slab&family=Lemon&display=swap"
+    rel="stylesheet" />
 
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="../CSS/home.css" />
-    <!-- Font-Faces CSS StyleSheet -->
-    <link rel="stylesheet" href="../CSS/fonts.css">
-  
-    <title>SelfXpress</title>
-  </head>
+  <!-- Bootstrap CDN Icon Link -->
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
-  <body>
-    <!-- HEADER CONTENT -->
-    <header>
-      <!-- Navbar Section -->
-      <nav class="navbar navbar-expand-lg fixed-top bg-tranparent">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <!-- <img src="logo.png" alt="Logo" width="50" height="50"> -->
-            SelfXpress
-          </a>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="../CSS/home.css" />
+  <!-- Font-Faces CSS StyleSheet -->
+  <link rel="stylesheet" href="../CSS/fonts.css">
 
-          <!-- Hamburguer Menu -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <title>SelfXpress</title>
+</head>
 
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Início</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="../Html/about.html">Sobre</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="produtosDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  Produtos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../Html/tech.html">Tech</a></li>
-                  <li><a class="dropdown-item" href="../Html/home.html">Home</a></li>
-                  <li><a class="dropdown-item" href="../Html/kids.html">Kids</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+<body>
+  <!-- HEADER CONTENT -->
+  <header>
+    <div id="overlay" class="overlay"></div>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-tranparent">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <!-- <img src="logo.png" alt="Logo" width="50" height="50"> -->
+          SelfXpress
+        </a>
 
+        <!-- Hamburguer Menu -->
+        <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Html/about.html">Sobre</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="produtosDropdown" role="button"
+                data-bs-toggle="dropdown">
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../Html/tech.html">Tech</a></li>
+                <li><a class="dropdown-item" href="../Html/home.html">Home</a></li>
+                <li><a class="dropdown-item" href="../Html/kids.html">Kids</a></li>
+              </ul>
+            </li>
+          </ul>
           <!-- Botão de contato -->
           <a href="#" class="btn btn-primary">Contato</a>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <!-- Hero Section -->
-      <div
-        id="heroCarousel"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
+    <!-- Hero Section -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <!-- Carousel Indicators -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="100000">
-            <div class="purple-blur"></div>
-            <img
-              src="../Assets/Images/Hero-1.jpg"
-              style="filter: brightness(1.5) contrast(1.2)"
-              alt=""
-              class="bd-placeholder-img-lg d-block w-100"
-              color="#555"
-              background="#777"
-              text="First slide"
-            />
-            <div
-              class="carousel-caption text-start text-md-center text-lg-start"
-            >
-              <h1 class="title fw-bold text-white mb-1 display-1">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="purple-blur"></div>
+          <img src="../Assets/Images/Hero-1.jpg" style="filter: brightness(1.5) contrast(1.2)" alt=""
+            class="bd-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+          <div class="carousel-caption text-start text-md-center text-lg-start" id="heroCaption">
+            <h1 class="title fw-bold text-white mb-1 mx-auto">
+              Affordable tech & home appliances delivered to you
+            </h1>
+            <!-- <h1 class="title fw-bold text-white mb-1 ">
                 Affordable tech & home appliances delivered to you
               </h1>
-              <h1 class="title fw-bold text-white mb-1 display-2">
-                Affordable tech & home appliances delivered to you
-              </h1>
-              <h1 class="title fw-bold text-white mb-1 display-3">
+              <h1 class="title fw-bold text-white mb-1">
                 Affordable tech & home appliances delivered to you
               </h1>
               <div class="box-1"></div>
               <div class="box-2"></div>
-              <div class="box-3"></div>
-              <h4 class="subtitle fw-bold">Turn your life around!</h4>
-              <p class="description text-white">
-                Discover the latest in technology and home essentials at
-                unbreakable prices. Enjoy the conveniences of low or no-cost
-                delivery right to your doorstep!
-              </p>
-              <div class="row">
-                <a id="shop-button" class="col-2 btn btn-primary">Shop</a>
-                <a id="learn-button" class="col-2 btn btn-primary">Learn</a>
-              </div>
+              <div class="box-3"></div> -->
+            <h4 class="subtitle fw-bold">Turn your life around!</h4>
+            <p class="description text-white">
+              Discover the latest in technology and home essentials at
+              unbreakable prices. Enjoy the conveniences of low or no-cost
+              delivery right to your doorstep!
+            </p>
+            <div class="row">
+              <a id="shop-button" class="col-4 col-md-2 me-3 ms-2 btn btn-primary">Shop</a>
+              <a id="learn-button" class="col-4 col-md-2 btn btn-primary">Learn</a>
             </div>
-            <!-- Social Media Bar -->
-            <div
-              class="social-media d-flex justify-content-center z-3 text-white"
-            >
-              <!-- Facebook link -->
-              <a href="https://facebook.com/mozprogym" class="btn btn-outline-light btn-floating m-1">
-                        <i class="fa-brands fa-facebook" style="color: #0742f2"></i>
-                    </a>
+          </div>
+          <!-- Social Media Bar -->
+          <div id="social-bar" class="social-media d-flex justify-content-center z-3 text-white">
+            <!-- Facebook link -->
+            <a href="https://facebook.com/mozprogym" class="btn btn-outline-light btn-floating m-1">
+              <i class="fa-brands fa-facebook" style="color: #0742f2"></i>
+            </a>
 
-              <!-- Whats App Link -->
-              <a href="https://wa.me/+258844414441" class="btn btn-outline-light btn-floating m-1">
-                        <i class="fa-brands fa-whatsapp" style="color: limegreen"></i>
-                    </a>
+            <!-- Whats App Link -->
+            <a href="https://wa.me/+258844414441" class="btn btn-outline-light btn-floating m-1">
+              <i class="fa-brands fa-whatsapp" style="color: limegreen"></i>
+            </a>
 
-              <!-- Instagram link -->
-              <a href="https://www.instagram.com/mozprogym/"
-                        class="btn btn-outline-light btn-floating m-1">
-                        <i class="fa-brands fa-instagram" style="
+            <!-- Instagram link -->
+            <a href="https://www.instagram.com/mozprogym/" class="btn btn-outline-light btn-floating m-1">
+              <i class="fa-brands fa-instagram" style="
                             background: linear-gradient(
                             210deg,
                             #f9ce34,
@@ -204,463 +139,461 @@
                             #6228d7
                           );
                         "></i>
-                    </a>
+            </a>
 
-              <!-- Youtube Link -->
-              <a href="https://www.youtube.com/@MozProGym" class="btn btn-outline-light btn-floating m-1">
-                        <i class="fa-brands fa-youtube" style="color: red"></i>
-                    </a>
+            <!-- Youtube Link -->
+            <a href="https://www.youtube.com/@MozProGym" class="btn btn-outline-light btn-floating m-1">
+              <i class="fa-brands fa-youtube" style="color: red"></i>
+            </a>
 
-              <!-- Gmail Link -->
-              <a href="mailto:info@progym.com" class="btn btn-outline-light btn-floating m-1"> 
-                        <img src="../Images/logo/gmailIcon-removebg-preview.png" alt="" />
-                    </a>
+            <!-- Gmail Link -->
+            <a href="mailto:info@progym.com" class="btn btn-outline-light btn-floating m-1">
+              <img src="../Images/logo/gmailIcon-removebg-preview.png" alt="" />
+            </a>
 
-              <!-- Tik Tok Link -->
-              <a href="https://www.tiktok.com/@mozprogym" class="btn btn-outline-light btn-floating m-1">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-            </div>
-            <div class="overlay"></div>
+            <!-- Tik Tok Link -->
+            <a href="https://www.tiktok.com/@mozprogym" class="btn btn-outline-light btn-floating m-1">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
           </div>
-          <!-- Carousel Item 2 -->
-          <div class="carousel-item carousel-2" data-bs-interval="10000">
-            <img
-              src="../Assets/Images/Hero-2.jpg"
-              style="filter: brightness(1.3) contrast(1.2)"
-              alt=""
-              class="bd-placeholder-img-lg d-block w-100"
-              color="#444"
-              background="#666"
-              text="Second slide"
-            />
-            <div
-              class="carousel-caption text-start text-md-center text-lg-start"
-            >
-              <h1 class="title fw-bold text-white mb-1 display-1">
-                Focused on delivering the best service
+          <div class="overlay"></div>
+        </div>
+        <!-- Carousel Item 2 -->
+        <div class="carousel-item carousel-2" data-bs-interval="10000">
+          <img src="../Assets/Images/Hero-2.jpg" style="filter: brightness(1.3) contrast(1.2)" alt=""
+            class="bd-placeholder-img-lg d-block w-100" color="#444" background="#666" text="Second slide" />
+          <div class="carousel-caption text-start text-md-center text-lg-start">
+            <h1 class="title fw-bold text-white mb-1 display-1">
+              Focused on delivering the best service
+            </h1>
+            <h4 class="subtitle fw-bold">
+              Get the latest, here now and tomorrow!
+            </h4>
+            <p class="description fs-small">
+              With a universe of devices, sevices we aim to give the best
+              expirience nd empower our costumers to stay up-to-date with the
+              latest tech and wellness.
+            </p>
+            <div class="row ms-0">
+              <a id="shop-button" class="col-4 me-3 btn btn-primary">Shop</a>
+              <a id="learn-button" class="col-4 btn btn-primary">Learn</a>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <!-- Carousel Item 3 -->
+        <div class="carousel-item carousel-3" data-bs-interval="100000">
+          <img src="../Assets/Images/DeskSetup-2.jpg" style="filter: brightness(1) contrast(1.3)" alt=""
+            class="bd-placeholder-img-lg d-block w-100" color="#333" background="#555" text="Third slide" />
+          <div class="carousel-caption text-center text-md-center text-lg-center relative top-50">
+            <h1 class="title fw-bold text-white mb-1">
+              Create your dream setup,build your pc, give sound & meaning to
+              your workspace, improve your workflow
+            </h1>
+            <h4 class="subtitle fw-bold">Everything in one place!</h4>
+            <p class="description">
+              With our wide range of home products, applieances, gadgets
+              suited for your dream setup, gamer or not you will be
+              confortable, safe and improved perfomance.
+            </p>
+            <div class="row">
+              <a id="shop-button" class="col-4 me-3
+               btn btn-primary">Shop</a>
+              <a id="learn-button" class="col-4
+               btn btn-primary">Learn</a>
+            </div>
+          </div>
+          <div class="overlay" style="filter: opacity(0.2) !important"></div>
+        </div>
+      </div>
+      <!-- Carousel Control Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <!-- Promotional Banner -->
+  <section id="promo-banner" class="bg-light py-0 py-md-2 px-md-5">
+    <div class="container-fluid">
+      <div class="row align-items-center text-center text-md-end g-0 my-0">
+        <!-- Promo Info -->
+        <div class="col-12 col-md-8 px-0 ps-md-2 ms-md-2 mb-2 mb-md-0">
+          <span class="fs-small">💰 Save big: <strong> 25% Off when you buy 3 items</strong> Shop now
+          and take advantage of this limited offer:</span>
+        </div>
+
+        <!-- Buttons: Shop Now + Close -->
+        <div class="col-12 col-md-3 d-flex justify-content-center align-items-center px-0
+        ps-md-2 ps-sm-5 my-0 ms-3 ">
+          <a href="#" class="btn col-10 col-md-8 col-sm-7 ms-sm-auto me-auto p-0">Shop Now</a>
+          <button type="button" class="btn-close col-4 fs-6 ms-md-5" id="close-btn" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Feauture Section -->
+    <section id="feauture">
+      <!-- Container -->
+      <div class="container relative">
+        <div class="row">
+          <!-- Text Content Column -->
+          <div class="col-6 h-100">
+            <div class="content">
+              <!-- Main Heading -->
+              <h1 class="title mb-3 text-dark">
+                Experience Unmatched Savings and Convinience with Our Innovative
+                Shopping Solutions
               </h1>
-              <h4 class="subtitle fw-bold">
-                Get the latest, here now and tomorrow!
-              </h4>
-              <p class="description">
-                With a universe of devices, sevices we aim to give the best
-                expirience nd empower our costumers to stay up-to-date with the
-                latest tech and wellness.
-              </p>
+              <!-- Subheading -->
+              <h5 class="subtitle m3 text-dark">
+                We look for the best dealerships on your behalf so you can
+                aquire the best investment for a wide range of products, this is
+                all combined with a direct dilivery to your home or desired
+                location, with safety, care and joy.
+              </h5>
+              <!-- Target Points Row -->
               <div class="row">
-                <a id="shop-button" class="col-2 btn btn-primary">Shop</a>
-                <a id="learn-button" class="col-2 btn btn-primary">Learn</a>
+                <div class="bg-light col-6">
+                  <h4 class="target-point text-dark fw-5 prices">
+                    Affordable Prices
+                  </h4>
+                  <p class="description">
+                    Get top-quality products directly to your home or desired
+                    location, with safety, care and joy.
+                  </p>
+                </div>
+                <div class="bg-light col-6">
+                  <h4 class="target-point text-dark fw-5 delivery">
+                    Convenient Delivery
+                  </h4>
+                  <p class="description">
+                    Fast and relative delivery options to suit your busy
+                    lifestyle.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="overlay"></div>
           </div>
-          <!-- Carousel Item 3 -->
-          <div class="carousel-item carousel-3" data-bs-interval="10000">
-            <img
-              src="../Assets/Images/Product-Showcase-2.jpg"
-              style="filter: brightness(0.5) contrast(1.2)"
-              alt=""
-              class="bd-placeholder-img-lg d-block w-100"
-              color="#333"
-              background="#555"
-              text="Third slide"
-            />
-            <div
-              class="carousel-caption text-center text-md-center text-lg-center"
-            >
-              <h1 class="title fw-bold text-white mb-1">
-                Create your dream setup,build your pc, give sound & meaning to
-                your workspace, improve your workflow
-              </h1>
-              <h4 class="subtitle fw-bold">Everything in one place!</h4>
-              <p class="description">
-                With our wide range of home products, applieances, gadgets
-                suited for your dream setup, gamer or not you will be
-                confortable, safe and improved perfomance.
-              </p>
-              <div class="row">
-                <a id="shop-button" class="col-2 btn btn-primary">Shop</a>
-                <a id="learn-button" class="col-2 btn btn-primary">Learn</a>
-              </div>
-            </div>
-            <div class="overlay" style="filter: opacity(0.2) !important"></div>
+          <div class="col-6 h-100 bg-alert">
+            <img src="../Assets/Images/thumbs-up.jpg" class="img-fluid rounded" alt="" />
+            <div class="overlay"></div>
           </div>
         </div>
-        <!-- Carousel Control Buttons -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="prev"
-        >
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore">
+      <!-- Heading -->
+      <div class="heading">
+        <h6 class="index">Explore</h6>
+        <h1 class="title text-white mb-3">
+          Discover Our Diverse Range of Gadgets
+        </h1>
+        <h4 class="subtitle">
+          From smarthphones to smartwatches we offer a wide selection of the latest tech gadgets.
+          Find everything you need to stay connected and entertained at unbeatable prices.
+        </h4>
+      </div>
+      <!-- Cards -->
+      <div class="row">
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="../Assets/Images/DeskSetup-2.jpg" alt="Desk Setup" />
+            <div class="card-body">
+              <h4 class="card-title">Your One-Stop Shop for Home Appliances</h4>
+              <p class="card-text">Upgrade your home with our extensive collection of appliances.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../Assets/Images/father.jpg" alt="Father with his son" />
+            <div class="card-body">
+              <h4 class="card-title">Fun and Safe Gadgets for Kids</h4>
+              <p class="card-text">Explore our range of kid-friendly gadgets designed for safety and enjoyment.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../Assets/Images/guys.jpg" alt="Card image cap" />
+            <div class="card-body">
+              <h4 class="card-title">Stay Updated Shop Now for the Best Deals</h4>
+              <p class="card-text">Don't miss out on our latest promotions and discounts.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call To Action Buttons -->
+        <div class="row">
+          <a id="shop-button" class="col-2 btn btn-primary">Shop</a>
+          <a id="learn-button" class="col-2 btn btn-primary">Learn </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+      <!-- Container -->
+      <div class="container">
+        <div class="row">
+          <!-- Text Content Column -->
+          <div class="col-6">
+            <div class="content">
+              <!-- Index -->
+              <h6 class="index">
+                Savings
+              </h6>
+              <!-- Heading -->
+              <h1 class="title mb-3 text-white">
+                Discover Unmatched Value and Convinience Today
+              </h1>
+              <!-- Subheading -->
+              <h5 class="subtitle text-white">
+                Expirience significant cost savings on a wide range of tech and home appliances. Enjoy the added benefit
+                of low or no-cost delivery right to your doorstep.
+              </h5>
+              <!-- Call To Action Buttons -->
+              <div class="row">
+                <a id="shop-button" class="col-2 btn btn-primary">Shop</a>
+                <a id="learn-button" class="col-2 btn btn-primary">Learn</a>
+              </div>
+            </div>
+          </div>
+          <!-- Image Column  -->
+          <div class="col-6 bg-alert">
+            <img src="../Assets/Images/xbox-one.jpg" class="img-fluid rounded" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action (CTA) Section -->
+    <section id="cta">
+      <div class="container">
+        <div class="col-8">
+          <h3 class="title">
+            Discover Your Next Favorite Gadget
+          </h3>
+          <p class="description">
+            Shop the latest tech and home appliances today!
+          </p>
+        </div>
+        <div class="col-4">
+          <!-- Call To Action Buttons -->
+          <div class="row">
+            <a id="shop-button" class="col-4 text-center btn-primary">Shop</a>
+            <a id="learn-button" class="col-4 text-center btn-primary">Learn</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <h6 class="index mb-3">Testimonials</h6>
+      <div id="testCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#testCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="First slide"></li>
+          <li data-bs-target="#testCarousel" data-bs-slide-to="1" aria-label="Second slide"></li>
+          <li data-bs-target="#testCarousel" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div data-bs-interval="10000" class="carousel-item active">
+            <div class="carousel-caption d-md-block">
+              <h3>"The quality of the product I purchased exceeded my expectations, and the delivery was prompt and
+                hassle-free!"</h3>
+              <img src="../Assets/Images/testimonial3.jpg" class="w-100 d-block" alt="First slide" />
+              <h6 class="name">
+                Marcos Terra
+              </h6>
+              <p class="local">
+                Maputo, Sommerchield II
+              </p>
+            </div>
+          </div>
+          <div data-bs-interval="10000" class="carousel-item">
+            <div class="carousel-caption d-md-block">
+              <h3>"I still come to SelfXpress everytime I want anything for my AirBnB's"</h3>
+              <img src="../Assets/Images/testimonial5.jpg" class="w-100 d-block" alt="" />
+              <h6 class="name">
+                Camila Tesouro
+              </h6>
+              <p class="local">
+                Matola, Matola Rio
+              </p>
+            </div>
+          </div>
+          <div data-bs-interval="10000" class="carousel-item">
+            <div class="carousel-caption d-md-block">
+              <h3>"My friends recommended and I, since then I call them everytime "</h3>
+              <img src="../Assets/Images/testimonial-3.jpg" class="w-100 d-block" alt="" />
+              <h6 class="name">
+                José BaCosta
+              </h6>
+              <p class="local">
+                Maputo, Xinamanquila - Bairro C
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#testCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </header>
-    <!-- Promotional Banner -->
-    <section id="promo-banner">
-      <span
-        >💰 Save big: <strong> 25% Off when you buy 3 items</strong> Shop now
-        and take advantage of this limited offer:</span
-      >
-      <a href="#" class="promp-btn"> Shop Now </a>
-      <button
-        type="button"
-        class="btn-close btn-close-white ms-4"
-        aria-label="colse"
-        onclick="document.querySelector('#promo-banner').alert('Success!').style.display='none'"
-      ></button>
+
     </section>
-    
-    <!-- MAIN CONTENT -->
-    <main>
-      <!-- Feauture Section -->
-      <section id="feauture">
-        <!-- Container -->
-        <div class="container relative">
-          <div class="row">
-            <!-- Text Content Column -->
-            <div class="col-6 h-100">
-              <div class="content">
-                  <!-- Main Heading -->
-                <h1 class="title mb-3 text-dark">
-                  Experience Unmatched Savings and Convinience with Our Innovative
-                  Shopping Solutions
-                </h1>
-                <!-- Subheading -->
-                <h5 class="subtitle m3 text-dark">
-                  We look for the best dealerships on your behalf so you can
-                  aquire the best investment for a wide range of products, this is
-                  all combined with a direct dilivery to your home or desired
-                  location, with safety, care and joy.
-                </h5>
-                <!-- Target Points Row -->
-                <div class="row">
-                  <div class="bg-light col-6">
-                    <h4 class="target-point text-dark fw-5 prices">
-                      Affordable Prices
-                    </h4>
-                    <p class="description">
-                      Get top-quality products directly to your home or desired
-                      location, with safety, care and joy.
-                    </p>
-                  </div>
-                  <div class="bg-light col-6">
-                    <h4 class="target-point text-dark fw-5 delivery">
-                      Convenient Delivery
-                    </h4>
-                    <p class="description">
-                      Fast and relative delivery options to suit your busy
-                      lifestyle.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 h-100 bg-alert">
-              <img
-                src="../Assets/Images/thumbs-up.jpg"
-                class="img-fluid rounded"
-                alt=""
-              />
-              <div class="overlay"></div>
-            </div>
-          </div>
+
+    <!-- Product Carousel Section -->
+
+
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <div class="heading">
+        <div class="index mb-3">Contact</div>
+        <h1 class="title">
+          Get In Touch
+        </h1>
+        <p class="description">
+          We'd love to hear from you!
+        </p>
+      </div>
+      <div class="container">
+        <div class="mb-3">
+          <label for="" class="form-label">Name</label>
+          <input type="text" name="" id="userName" class="form-control" placeholder="" />
         </div>
-      </section>
-  
-      <!-- Explore Section -->
-      <section id="explore"> 
-        <!-- Heading -->
-        <div class="heading">
-          <h6 class="index">Explore</h6>
-          <h1 class="title text-white mb-3">
-            Discover Our Diverse Range of Gadgets
-          </h1>
-          <h4 class="subtitle">
-            From smarthphones to smartwatches we offer a wide selection of the latest tech gadgets.
-            Find everything you need to stay connected and entertained at unbeatable prices.
-          </h4>
+        <div class="mb-3">
+          <label for="" class="form-label">Email</label>
+          <input type="email" class="form-control" name="" id="userEmail" placeholder="" />
         </div>
-        <!-- Cards -->
-        <div class="row">
-          <div class="card-group">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="../Assets/Images/DeskSetup-2.jpg"
-                alt="Desk Setup"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Your One-Stop  Shop for Home Appliances</h4>
-                <p class="card-text">Upgrade your home with our extensive collection of appliances.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="../Assets/Images/father.jpg"
-                alt="Father with his son"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Fun and Safe Gadgets for Kids</h4>
-                <p class="card-text">Explore our range of kid-friendly gadgets designed for safety and enjoyment.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="../Assets/Images/guys.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Stay Updated Shop Now for the Best Deals</h4>
-                <p class="card-text">Don't miss out on our latest promotions and discounts.</p>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Call To Action Buttons -->
-          <div class="row">
-            <a id="shop-button" class="col-2 btn btn-primary">Shop</a>
-            <a id="learn-button" class="col-2 btn btn-primary">Learn </a>
-          </div>
+        <div class="mb-1">
+          <label for="" class="form-label">Message</label>
+          <textarea class="form-control" name="" id="" rows="3" placeholder="Type your message">
+            </textarea>
         </div>
-      </section>
-
-      <!-- Benefits Section -->
-      <section id="benefits">
-        <!-- Container -->
-        <div class="container">
-          <div class="row">
-            <!-- Text Content Column -->
-            <div class="col-6">
-              <div class="content">
-                <!-- Index -->
-                <h6 class="index">
-                  Savings
-                </h6>
-                <!-- Heading -->
-                <h1 class="title mb-3 text-white">
-                  Discover Unmatched Value and Convinience Today
-                </h1>
-                <!-- Subheading -->
-                <h5 class="subtitle text-white">
-                  Expirience significant cost savings on a wide range of tech and home appliances. Enjoy the added benefit of low or no-cost delivery right to your doorstep. 
-                </h5>
-                <!-- Call To Action Buttons -->
-                <div class="row">
-                  <a id="shop-button" class="col-2 btn btn-primary">Shop</a>
-                  <a id="learn-button" class="col-2 btn btn-primary">Learn</a>
-                </div>
-              </div>
-            </div>
-            <!-- Image Column  -->
-            <div class="col-6 bg-alert">
-              <img 
-                src="../Assets/Images/xbox-one.jpg" 
-                class="img-fluid rounded" 
-                alt=""
-                />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Call To Action (CTA) Section -->
-      <section id="cta">
-        <div class="container">
-          <div class="col-8">
-            <h3 class="title">
-              Discover Your Next Favorite Gadget
-            </h3>
-            <p class="description">
-              Shop the latest tech and home appliances today!
-            </p> 
-          </div>
-          <div class="col-4">
-                <!-- Call To Action Buttons -->
-                <div class="row">
-                  <a id="shop-button" class="col-4 text-center btn-primary">Shop</a>
-                  <a id="learn-button" class="col-4 text-center btn-primary">Learn</a>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials Section -->
-      <section id="testimonials">
-        <h6 class="index mb-3">Testimonials</h6>
-        <div id="testCarousel" class="carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li
-              data-bs-target="#testCarousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="First slide"
-            ></li>
-            <li
-              data-bs-target="#testCarousel"
-              data-bs-slide-to="1"
-              aria-label="Second slide"
-            ></li>
-            <li
-              data-bs-target="#testCarousel"
-              data-bs-slide-to="2"
-              aria-label="Third slide"
-            ></li>
-          </ol>
-          <div class="carousel-inner">
-            <div data-bs-interval="10000" class="carousel-item active">
-              <div class="carousel-caption d-md-block">
-                <h3>"The quality of the product I purchased exceeded my expectations, and the delivery was prompt and hassle-free!"</h3>
-                <img
-                src="../Assets/Images/testimonial3.jpg"
-                class="w-100 d-block"
-                alt="First slide"
-              />
-                <h6 class="name">
-                  Marcos Terra
-                </h6>
-                <p class="local">
-                  Maputo, Sommerchield II
-                </p>
-              </div>
-            </div>
-            <div data-bs-interval="10000" class="carousel-item">
-              <div class="carousel-caption d-md-block">
-                <h3>"I still come to SelfXpress everytime I want anything for my AirBnB's"</h3>
-                <img
-                src="../Assets/Images/testimonial5.jpg"
-                class="w-100 d-block"
-                alt=""
-              />
-                <h6 class="name">
-                  Camila Tesouro
-                </h6>
-                <p class="local">
-                  Matola, Matola Rio
-                </p>
-              </div>
-            </div>
-            <div data-bs-interval="10000" class="carousel-item">
-              <div class="carousel-caption d-md-block">
-                <h3>"My friends recommended and I, since then I call them everytime "</h3>
-                <img
-                src="../Assets/Images/testimonial-3.jpg"
-                class="w-100 d-block"
-                alt=""
-              />
-                <h6 class="name">
-                  José BaCosta
-                </h6>
-                <p class="local">
-                  Maputo, Xinamanquila - Bairro C
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#testCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#testCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        
-      </section>
-
-      <!-- Product Carousel Section -->
+        <button type="submit" class="btn btn-primary" id="submit">
+          Submit
+        </button>
+      </div>
+    </section>
+  </main>
 
 
 
-      <!-- Contact Us Section -->
-      <section id="contact">
-        <div class="heading">
-          <div class="index mb-3">Contact</div>
-          <h1 class="title">
-            Get In Touch
-          </h1>
-          <p class="description">
-            We'd love to hear from you!
+  <!-- Footer Section -->
+  <footer class="bg-light text-dark pt-5 pb-3">
+    <div class="container">
+      <!-- Main Row with 3 columns -->
+      <div class="row gy-4 text-center text-md-start">
+        <!-- Column with Logo & Address -->
+        <div class="col-12 col-md-8">
+          <h4 class="brand fw-bold">SelfXpress</h4>
+          <p class="mb-1">
+            <strong>Address:</strong><br>
+            Level 12 Sample St, Sydney NSW 2000
+          </p>
+          <p class="mb-1">
+            <strong>Contact:</strong><br>
+            +258 84 39 34 991 <br>
+            <a href="mailto:selfxpressshop@gmail.com">selfxpressshop@gmail.com</a>
           </p>
         </div>
-        <div class="container">
-          <div class="mb-3">
-            <label for="" class="form-label">Name</label>
-            <input
-              type="text"
-              name=""
-              id="userName"
-              class="form-control"
-              placeholder=""
-            />
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              name=""
-              id="userEmail"
-              placeholder=""
-            />
-          </div>
-          <div class="mb-1">
-            <label for="" class="form-label">Message</label>
-            <textarea 
-              class="form-control" 
-              name="" 
-              id="" 
-              rows="3" 
-              placeholder="Type your message">  
-            </textarea>
-          </div>    
-          <button
-            type="submit"
-            class="btn btn-primary"
-            id="submit"
-          >
-            Submit
-          </button>  
+
+        <!-- Column: Left Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="index fw-bold">Explore</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Products</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Gift Cards</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Shop Now</a></li>
+          </ul>
         </div>
-      </section>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Column: Right Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="index fw-bold">More</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Phones</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Computers</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Tablets</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Home Appliances</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Kids</a></li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- Bootstrap Javascript Popper  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8N+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.minjs"></script>
-  </body>
+      <!-- Redes Sociais Centralizadas -->
+      <div class="row mt-4">
+        <div class="text-center mt-5">
+          <a href="http://" class="me-3 text-dark text-decoration-none">
+            <!-- Facebook Icon Link -->
+            <i class="bi bi-facebook fs-5"></i>
+          </a>
+          <a href="http://" class="me-3 text-dark text-decoration-none">
+            <!-- Whats App Link -->
+            <i class="bi bi-whatsapp fs-5"></i>
+          </a>
+          <a href="http://" class="me-3 text-dark text-decoration-none">
+            <!-- Instagram Icon Link  -->
+            <i class="bi bi-instagram fs-5"></i>
+          </a>
+          <a href="http://" class="me-3 text-dark text-decoration-none">
+            <!-- Tick Tock Icon Link -->
+            <i class="bi bi-tiktok fs-5"></i>
+          </a>
+          <a href="http://" class="me-3 text-dark text-decoration-none">
+            <!-- Gmail Icon Link -->
+            <i class="bi bi-gmail f
+            s-5"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-fluid">
+      <!-- Large Company Name & Legal links -->
+      <div class="bottom text-center mt-3">
+        <h1 class="brand fw-bold">SelfXpress</h1>
+        <p class="small text-muted mt-3 mb-0">
+          Created by <strong>OS.Design</strong> &mdash; &copy; 2025 <strong>SelfXpress</strong> All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- END OF PAGE -->
+  <!-- Navbar Javascript -->
+  <script src="../JavaScript/nav.js"></script>
+  <script src="../JavaScript/home.js"></script>
+
+
+  <!-- Bootstrap CDN Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap Javascript Popper  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8N+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.minjs"></script>
+</body>
+
 </html>

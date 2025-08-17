@@ -353,7 +353,7 @@ header {
   }
 }
 
-
+/* Footer Section */
 footer{
   .container{
     padding: 5rem 1;
@@ -419,13 +419,7 @@ footer{
   }
 }
 
-
-
-
-
-
-
-
+/* ______________________________________________________________ */
 /* Responsiveness Section */
 /* Mobile Breakpoint */
 @media (max-width: 575.98px) {
@@ -471,6 +465,7 @@ footer{
           text-align: center;
 
           ul.navbar-nav {
+            padding-left: 0;
             li.nav-item {
               padding: 2rem 0;
 
