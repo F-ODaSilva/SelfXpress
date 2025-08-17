@@ -3,7 +3,7 @@
  /* Special Gothic */
  @font-face {
   font-family: "Special Gothic";
-    src: url(../Assets/Fonts/Special_Gothic/SpecialGothicExpandedOne-Regular.ttf) format(truetype);
+    src: url(../Assets/Fonts/SpecialGothicExpandedOne-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -11,7 +11,7 @@
  /* PoetsOne */
  @font-face {
   font-family: "PoetsOne";
-    src: url(../Assets/Fonts/PoetsOne/PoetsenOne-Regular.ttf) format(truetype);
+    src: url(../Assets/Fonts/PoetsenOne-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -19,7 +19,7 @@
  /* Poller One */
  @font-face {
   font-family: "Poller";
-    src: url(../Assets/Fonts/PollerOne/PollerOne-Regular.ttf) format(truetype);
+    src: url(../Assets/Fonts/PollerOne-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -27,7 +27,7 @@
  /* Rubik One */
  @font-face {
   font-family: "Rubik";
-    src: url(../Assets/Fonts/RubikOne/RubikMonoOne-Regular.ttf) format(truetype);
+    src: url(../Assets/Fonts/RubikMonoOne-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -35,7 +35,7 @@
  /* Rightoues */
  @font-face {
   font-family: "Right";
-    src: url(../Assets/Fonts/Righteous/Righteous-Regular.ttf) format(truetype);
+    src: url(../Assets/Fonts/Righteous-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -43,7 +43,7 @@
   /* Poppins */
   @font-face {
     font-family: "Poppins";
-    src: url(../Assets/Fonts/Poppins/Poppins-Regular.ttf) format(truetype);
+    src: url(../Assets/Fonts/Poppins-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -51,7 +51,7 @@
   /* Emblema */
   @font-face {
     font-family: "Emblema";
-    src: url(../Assets/Fonts/Emblema_One/EmblemaOne-Regular.ttf) format(truetype);
+    src: url(../Assets/Fonts/EmblemaOne-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -67,7 +67,7 @@
   /* QuickSand */
   @font-face {
     font-family: "QuickSand";
-    src: url(../Assets/Fonts/Quicksand/Quicksand-VariableFont_wght.ttf)
+    src: url(../Assets/Fonts/Quicksand-VariableFont_wght.ttf)
       format(truetype);
     font-weight: normal;
     font-style: normal;
@@ -76,7 +76,7 @@
   /* Lilita One */
   @font-face {
     font-family: "Lilita";
-    src: url(../Assets/Fonts/Lilita_One/LilitaOne-Regular.ttf) format(truetype);
+    src: url(../Assets/Fonts/LilitaOne-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -84,7 +84,7 @@
   /* Vercetti */
   @font-face {
     font-family: "Vercetti";
-    src: url(../Assets/Fonts/Vercetti\ Regular/Vercetti-Regular.ttf)
+    src: url(../Assets/Fonts/Vercetti-Regular.ttf)
       format(truetype);
     font-weight: normal;
     font-style: normal;
@@ -93,7 +93,7 @@
   /* Lora */
   @font-face {
     font-family: "Lora";
-    src: url(../Assets/Fonts/Lora/Lora-VariableFont_wght.ttf) format(truetype);
+    src: url(../Assets/Fonts/Lora-VariableFont_wght.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
   }
@@ -101,7 +101,7 @@
   /* Lora Italic */
   @font-face {
     font-family: "Lora Italic";
-    src: url(../Assets/Fonts/Lora/Lora-Italic-VariableFont_wght.ttf)
+    src: url(../Assets/Fonts/Lora-Italic-VariableFont_wght.ttf)
       format(truetype);
     font-weight: normal;
     font-style: normal;
