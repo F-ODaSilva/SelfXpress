@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Loja · SelfXpress</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="Todos os produtos SelfXpress: tecnologia, gaming, casa e kids, com preços em meticais e entrega em Maputo e Matola.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Noto+Sans+Mono:wght@400;500&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Special+Gothic+Expanded+One&display=swap">
+  <link rel="stylesheet" href="assets/css/system.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-page="shop">
+
+<main>
+  <section class="shop-head">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Navegação estrutural"><a href="index.html">Início</a><span aria-hidden="true">/</span><span id="crumbCat">Loja</span></nav>
+      <h1 id="shopTitle">Todos os produtos</h1>
+      <div class="cat-tabs" role="group" aria-label="Categorias" id="catTabs"></div>
+    </div>
+  </section>
+
+  <div class="wrap shop">
+    <aside class="filters" id="filters" aria-label="Filtros">
+      <div class="row" style="justify-content:space-between"><h2>Filtrar</h2><button class="icon-btn filter-btn" id="closeFilters" aria-label="Fechar filtros"><svg aria-hidden="true"><use href="assets/icons.svg#x"/></svg></button></div>
+      <fieldset class="range">
+        <legend>Preço máximo</legend>
+        <input type="range" id="fMax" min="1000" max="130000" step="500" value="130000" aria-describedby="fMaxOut">
+        <output id="fMaxOut" for="fMax">130.000 MT</output>
+      </fieldset>
+      <fieldset>
+        <legend>Mostrar</legend>
+        <label class="check"><input type="checkbox" id="fPromo"> Só promoções</label>
+        <label class="check"><input type="checkbox" id="fStock"> Mais de 2 em stock</label>
+        <label class="check"><input type="checkbox" id="fRefurb"> Recondicionados</label>
+      </fieldset>
+      <button class="btn line sm" id="resetFilters">Limpar filtros</button>
+    </aside>
+
+    <section aria-label="Produtos">
+      <div class="toolbar">
+        <label class="search"><span class="sr-only">Pesquisar</span><svg aria-hidden="true"><use href="assets/icons.svg#search"/></svg><input class="input" id="shopSearch" type="search" placeholder="Pesquisar na loja" autocomplete="off"></label>
+        <div class="row">
+          <button class="btn line sm filter-btn" id="openFilters"><svg aria-hidden="true"><use href="assets/icons.svg#sliders"/></svg>Filtros</button>
+          <label class="sr-only" for="sort">Ordenar</label>
+          <select class="select" id="sort">
+            <option value="rel">Mais relevantes</option>
+            <option value="asc">Preço: mais baixo</option>
+            <option value="desc">Preço: mais alto</option>
+            <option value="off">Maior desconto</option>
+          </select>
+        </div>
+      </div>
+      <p class="result-count" id="count" aria-live="polite"></p>
+      <div class="grid" id="grid" style="margin-top:14px"></div>
+      <div class="no-results" id="none" hidden>
+        <h2 style="font-size:1.4rem">Nada encontrado com esses filtros</h2>
+        <p class="muted">Experimente outra palavra ou peça-nos pelo WhatsApp. Encomendamos produtos por pedido.</p>
+        <div class="row" style="justify-content:center"><button class="btn ink" id="clearAll">Limpar pesquisa e filtros</button><a class="btn wa" href="https://wa.me/258844414441" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg>Pedir pelo WhatsApp</a></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer data-shell></footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/shop.js"></script>
+</body>
+</html>

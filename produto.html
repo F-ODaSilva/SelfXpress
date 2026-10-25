@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Produto · SelfXpress</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Noto+Sans+Mono:wght@400;500&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Special+Gothic+Expanded+One&display=swap">
+  <link rel="stylesheet" href="assets/css/system.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-page="shop">
+
+<main class="pdp">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Navegação estrutural"><a href="index.html">Início</a><span aria-hidden="true">/</span><a href="loja.html">Loja</a><span aria-hidden="true">/</span><a id="pCat" href="loja.html"></a></nav>
+    <div class="pdp-grid">
+      <figure class="pdp-photo" id="pPhoto"><img id="pImg" alt="" width="900" height="900"><div class="badges" id="pBadges"></div></figure>
+      <div class="pdp-info">
+        <div class="stack" style="gap:10px">
+          <span class="stock" id="pStock"></span>
+          <h1 id="pName"></h1>
+          <p class="lede" id="pDesc"></p>
+        </div>
+        <div class="pdp-price"><span class="price" id="pPrice"></span><span class="was num" id="pWas"></span><span class="badge deal" id="pOff" hidden></span></div>
+        <div class="buy">
+          <div class="row">
+            <div class="qty" role="group" aria-label="Quantidade"><button id="qMinus" aria-label="Menos um"><svg aria-hidden="true"><use href="assets/icons.svg#minus"/></svg></button><output id="qOut">1</output><button id="qPlus" aria-label="Mais um"><svg aria-hidden="true"><use href="assets/icons.svg#plus"/></svg></button></div>
+            <button class="btn" id="addBtn" style="flex:1">Adicionar ao carrinho</button>
+          </div>
+          <button class="btn wa block" id="buyNow"><svg aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg>Comprar já pelo WhatsApp</button>
+        </div>
+        <div class="estimator">
+          <label for="zone" style="font-weight:600;font-size:.9rem">Quando chega?</label>
+          <select class="select" id="zone"></select>
+          <output id="eta" aria-live="polite"></output>
+        </div>
+        <div class="perks">
+          <div><svg aria-hidden="true"><use href="assets/icons.svg#shield"/></svg><b id="pWarranty">12 meses de garantia</b>Troca directa nos primeiros 7 dias.</div>
+          <div><svg aria-hidden="true"><use href="assets/icons.svg#cash"/></svg><b>Paga na entrega</b>M-Pesa, e-Mola, cartão ou numerário.</div>
+          <div><svg aria-hidden="true"><use href="assets/icons.svg#box"/></svg><b>Embalagem segura</b>Selado e verificado à sua frente.</div>
+        </div>
+        <div class="stack" style="gap:12px">
+          <h2 style="font-size:1.3rem">Especificações</h2>
+          <dl class="specs" id="pSpecs"></dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="band tight" aria-labelledby="relTitle">
+    <div class="wrap">
+      <div class="head"><h2 id="relTitle">Também pode gostar</h2><a class="link" id="relLink" href="loja.html">Ver a categoria <svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a></div>
+      <div class="grid" id="related"></div>
+    </div>
+  </section>
+</main>
+
+<footer data-shell></footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/product.js"></script>
+</body>
+</html>

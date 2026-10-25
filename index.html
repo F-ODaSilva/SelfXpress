@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SelfXpress</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="SelfXpress: tecnologia, electrodomésticos e gadgets para crianças com entrega em Maputo e Matola. Encomende pelo WhatsApp e pague na entrega.">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Noto+Sans+Mono:wght@400;500&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Special+Gothic+Expanded+One&display=swap">
+  <link rel="stylesheet" href="assets/css/system.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-page="home" data-nav-over>
+
+<main>
+  <!-- HERO (original SelfXpress hero, rebuilt without Bootstrap) -->
+  <section class="hx" id="heroCarousel" aria-roledescription="carrossel" aria-label="Destaques">
+    <div class="hx-inner">
+      <div class="hx-item is-active" data-interval="10000" aria-roledescription="slide" aria-label="1 de 3">
+        <div class="purple-blur" aria-hidden="true"></div>
+        <img src="assets/img/hero-1.webp" style="filter: brightness(1.5) contrast(1.2)" alt="" width="1600" height="1067" fetchpriority="high">
+        <div class="hx-caption c1">
+          <h1 class="title">Tecnologia &amp; eletrodomésticos acessíveis, entregues diretamente até si.</h1>
+          <h4 class="subtitle">Transforme a sua vida!</h4>
+          <p class="description">Descubra as mais recentes novidades em tecnologia e essenciais para o lar a preços imbatíveis. Desfrute da comodidade de entregas a baixo custo — ou até gratuitas — diretamente à sua porta!</p>
+          <div class="hx-ctas"><a class="shop-button" href="loja.html">Shop</a><a class="learn-button" href="sobre.html">Mais</a></div>
+        </div>
+        <div class="social-media" aria-label="Redes sociais">
+          <a href="https://facebook.com" aria-label="Facebook" style="color:#0742f2"><svg aria-hidden="true"><use href="assets/icons.svg#fb-circle"/></svg></a>
+          <a href="https://wa.me/258844414441" aria-label="WhatsApp" style="color:limegreen"><svg aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg></a>
+          <a href="https://www.instagram.com" aria-label="Instagram"><svg aria-hidden="true"><use href="assets/icons.svg#ig-fill"/></svg></a>
+          <a href="https://www.youtube.com" aria-label="YouTube" style="color:red"><svg aria-hidden="true"><use href="assets/icons.svg#youtube"/></svg></a>
+          <a href="mailto:selfxpressshop@gmail.com" aria-label="Email"><svg aria-hidden="true"><use href="assets/icons.svg#gmail"/></svg></a>
+          <a href="https://www.tiktok.com" aria-label="TikTok" style="color:#fff"><svg aria-hidden="true"><use href="assets/icons.svg#tiktok"/></svg></a>
+        </div>
+        <div class="overlay" aria-hidden="true"></div>
+      </div>
+      <div class="hx-item c-2" data-interval="10000" aria-roledescription="slide" aria-label="2 de 3">
+        <img src="assets/img/hero-2.webp" style="filter: brightness(1.3) contrast(1.2)" alt="" width="1600" height="1067" loading="lazy">
+        <div class="hx-caption c2">
+          <h2 class="title">Focados em oferecer o melhor serviço</h2>
+          <h4 class="subtitle">Tenha acesso às últimas novidades — hoje, amanhã e sempre!</h4>
+          <p class="description">Com um universo de dispositivos e serviços, o nosso objetivo é proporcionar a melhor experiência e capacitar os nossos clientes a manterem-se atualizados com as mais recentes tendências em tecnologia e bem-estar.</p>
+          <div class="hx-ctas"><a class="shop-button" href="loja.html">Shop</a><a class="learn-button" href="sobre.html">Mais</a></div>
+        </div>
+        <div class="overlay" aria-hidden="true"></div>
+      </div>
+      <div class="hx-item c-3" data-interval="10000" aria-roledescription="slide" aria-label="3 de 3">
+        <img src="assets/img/desksetup-2.webp" style="filter: brightness(1) contrast(1.3)" alt="" width="1600" height="1067" loading="lazy">
+        <div class="hx-caption c3">
+          <h2 class="title">Crie o seu espaço de sonho: monte o seu PC, dê som e significado ao seu local de trabalho e melhore o seu fluxo de produtividade</h2>
+          <h4 class="subtitle">Tudo num só lugar!</h4>
+          <p class="description">Com a nossa ampla variedade de produtos para o lar, eletrodomésticos e gadgets, criados para o seu espaço de sonho — seja gamer ou não — garantimos conforto, segurança e um desempenho melhorado.</p>
+          <div class="hx-ctas"><a class="shop-button" href="loja.html">Shop</a><a class="learn-button" href="sobre.html">Mais</a></div>
+        </div>
+        <div class="overlay" aria-hidden="true" style="opacity:.2"></div>
+      </div>
+    </div>
+    <button class="hx-ctrl prev" aria-label="Anterior"><svg aria-hidden="true"><use href="assets/icons.svg#chev-l"/></svg></button>
+    <button class="hx-ctrl next" aria-label="Seguinte"><svg aria-hidden="true"><use href="assets/icons.svg#chev-r"/></svg></button>
+    <div class="hx-indicators" role="tablist" aria-label="Escolher slide">
+      <button class="is-active" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button>
+    </div>
+    <!-- Promotional banner (original) -->
+    <div id="promo-banner">
+      <span>💰Poupe em grande: <strong>25% de desconto na compra de 3 artigos</strong>. Compre agora e aproveite esta oferta limitada!</span>
+      <a href="loja.html" class="promo-btn">Compre Agora</a>
+      <button type="button" class="promo-close" id="close-btn" aria-label="Fechar"><svg aria-hidden="true"><use href="assets/icons.svg#x"/></svg></button>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="band tight" aria-labelledby="cat-title">
+    <div class="wrap">
+      <div class="head"><div class="stack"><h2 id="cat-title">Comprar por categoria</h2></div><a class="link" href="loja.html">Ver todos os produtos <svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a></div>
+      <div class="cats" id="cats"></div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <section class="band tight rail-band" aria-labelledby="feat-title">
+    <div class="wrap">
+      <div class="head">
+        <div class="stack"><p class="eyebrow">Mais vendidos esta semana</p><h2 id="feat-title">Em destaque</h2></div>
+        <div class="row"><button class="icon-btn rail-btn" data-rail="-1" aria-label="Anteriores"><svg aria-hidden="true"><use href="assets/icons.svg#arrow-left"/></svg></button><button class="icon-btn rail-btn" data-rail="1" aria-label="Seguintes"><svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></button></div>
+      </div>
+    </div>
+    <div class="rail" id="rail" tabindex="0" aria-label="Produtos em destaque"></div>
+  </section>
+
+  <!-- SETUP COM HOTSPOTS -->
+  <section class="band night setup" aria-labelledby="setup-title">
+    <div class="wrap">
+      <div class="head">
+        <div class="stack"><p class="eyebrow">Monte o seu setup</p><h2 id="setup-title">Toque no que gostar.<br>Levamos e instalamos.</h2></div>
+        <p class="lede" style="max-width:38ch">Cada peça desta secretária está à venda. Em Maputo, a instalação do kit completo é grátis.</p>
+      </div>
+      <div class="hotspot-stage">
+        <img src="assets/img/desksetup.webp" alt="Secretária gamer com monitor, teclado RGB e torre iluminada" width="1600" height="1067" loading="lazy">
+        <button class="spot" style="left:47%;top:44%" data-spot="monitor-27" aria-label="Monitor curvo 27 polegadas"><span></span></button>
+        <button class="spot" style="left:73%;top:57%" data-spot="torre-gamer" aria-label="Torre gamer RGB"><span></span></button>
+        <button class="spot" style="left:44%;top:69%" data-spot="teclado-rgb" aria-label="Teclado mecânico RGB"><span></span></button>
+        <div class="spot-card" id="spotCard" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA DA SEMANA -->
+  <section class="band" aria-labelledby="deal-title">
+    <div class="wrap deal-wrap">
+      <figure class="deal-photo"><img src="assets/img/xbox-one.webp" alt="Consola Xbox Series X com comando preto" width="1067" height="1600" loading="lazy"><span class="badge deal deal-off">−9%</span></figure>
+      <div class="stack deal-copy">
+        <p class="eyebrow">Oferta da semana</p>
+        <h2 id="deal-title">Xbox Series X 1 TB</h2>
+        <p class="lede">4K a 120 fps, SSD de 1 TB e um comando sem fios na caixa. Só 4 unidades a este preço.</p>
+        <div class="row" style="align-items:baseline;gap:14px"><span class="price deal-price">42.000<small>MT</small></span><span class="was num">46.000 MT</span></div>
+        <div class="countdown" aria-label="Tempo até ao fim da oferta" id="countdown">
+          <div><b class="num" data-u="d">0</b><span>dias</span></div>
+          <div><b class="num" data-u="h">00</b><span>horas</span></div>
+          <div><b class="num" data-u="m">00</b><span>min</span></div>
+          <div><b class="num" data-u="s">00</b><span>seg</span></div>
+        </div>
+        <div class="row"><button class="btn" data-add="xbox-series-x">Adicionar ao carrinho</button><a class="btn line" href="produto.html#xbox-series-x">Ver detalhes</a></div>
+        <span class="stock low">Restam 4 unidades no armazém de Malhangalene</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="band tight how-band" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="head"><div class="stack"><h2 id="how-title">Como funciona</h2><p class="lede">Sem cartão online, sem contas para criar.</p></div></div>
+      <ol class="how">
+        <li><span class="step num">1</span><h3>Escolha na loja</h3><p>Adicione os produtos ao carrinho. Mostramos o stock real de cada um.</p></li>
+        <li><span class="step num">2</span><h3>Confirme no WhatsApp</h3><p>O carrinho vira uma mensagem pronta. Respondemos em minutos com a hora de entrega.</p></li>
+        <li><span class="step num">3</span><h3>Receba e pague</h3><p>Pague ao estafeta com M-Pesa, e-Mola, cartão ou numerário. Verifique antes de pagar.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CTA (original purple banner) -->
+  <section class="band tight" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="cta-banner">
+        <img src="assets/img/hero-3.webp" alt="" loading="lazy" width="1600" height="1067">
+        <div class="stack" style="gap:6px">
+          <h2 id="cta-title">Descubra o seu próximo gadget favorito</h2>
+          <p class="subtitle">Adquira hoje as mais recentes novidades em tecnologia e eletrodomésticos!</p>
+        </div>
+        <div class="row"><a class="shop-button" href="loja.html">Shop</a><a class="learn-button" href="sobre.html">Mais</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTEMUNHOS -->
+  <section class="band" aria-labelledby="rev-title">
+    <div class="wrap">
+      <div class="head"><div class="stack"><p class="eyebrow">Clientes em Maputo e Matola</p><h2 id="rev-title">O que dizem de nós</h2></div></div>
+      <div class="reviews" id="reviews"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="band night contact" id="contacto" aria-labelledby="ct-title">
+    <div class="wrap contact-grid">
+      <div class="stack" style="gap:22px">
+        <p class="eyebrow">Fale connosco</p>
+        <h2 id="ct-title">Procura algo que não está na loja?</h2>
+        <p class="lede">Encomendamos por pedido. Diga-nos o modelo e respondemos com preço e prazo em menos de um dia útil.</p>
+        <ul class="contact-list">
+          <li><svg aria-hidden="true"><use href="assets/icons.svg#pin"/></svg><span>Rua da França, nº 123, Malhangalene A, Maputo</span></li>
+          <li><svg aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span class="num">+258 84 441 4441 · +258 84 393 4991</span></li>
+          <li><svg aria-hidden="true"><use href="assets/icons.svg#clock"/></svg><span>Seg. a sáb., 8h às 19h</span></li>
+        </ul>
+        <a class="btn wa" href="https://wa.me/258844414441" target="_blank" rel="noopener" style="justify-self:start"><svg aria-hidden="true"><use href="assets/icons.svg#whatsapp"/></svg>Abrir conversa no WhatsApp</a>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field"><label for="cName">Nome</label><input class="input" id="cName" autocomplete="name"><span class="err"></span></div>
+        <div class="field"><label for="cEmail">Email ou telemóvel</label><input class="input" id="cEmail" autocomplete="email" placeholder="nome@email.com ou +258 84 000 0000"><span class="err"></span></div>
+        <div class="field"><label for="cMsg">Mensagem</label><textarea class="textarea" id="cMsg" placeholder="Ex.: Procuro um portátil para design até 60.000 MT"></textarea><span class="err"></span></div>
+        <button class="btn block" type="submit">Enviar mensagem</button>
+        <div class="sent" id="sent" hidden><svg aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span id="sentText"></span></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer data-shell></footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>
